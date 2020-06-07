@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "JiachengLi"
 title_separator          : "-"
 name                     : &name "JiachengLi"
-description              : &description "Master Student at University of California San Diego"
+description              : &description "PHD Student at University of California San Diego"
 url                      : https://JiachengLi1995.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "JiachengLi1995.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "JiachengLi"
   avatar           : "selfie.jpg"
-  bio              : "Master Student at University of California San Diego.\n Research areas: Information Extraction, Recommender Systems. "
+  bio              : "PHD Student at University of California San Diego.\n Research areas: Information Extraction, Recommender Systems. "
   location         : "San Diego, US"
   employer         :
   pubmed           : 
