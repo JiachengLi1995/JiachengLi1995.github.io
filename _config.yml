@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "JiachengLi"
   avatar           : "selfie.jpg"
-  bio              : "Master Student at University of California San Diego. Research areas include Information Extraction, Recommender Systems. "
+  bio              : "Master Student at University of California San Diego.\n Research areas: Information Extraction, Recommender Systems. "
   location         : "San Diego, US"
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=Vdm6jq4AAAAJ&hl=en"
   email            : "j9li@eng.ucsd.edu"
   researchgate     : 
   uri              :
