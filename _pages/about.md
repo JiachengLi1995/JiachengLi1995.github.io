@@ -8,7 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Ph.D. student at UC San Diego beginning in 2020 Fall, advised by Prof. Julian McAuley. I'm interested in informatioin extraction, recommender systems, deep learning.
+I'm a Ph.D. student at UC San Diego beginning in 2020 Fall, advised by Prof. Julian McAuley. 
+<br/>I'm interested in informatioin extraction, recommender systems, deep learning.
 
 News
 ======
@@ -17,10 +18,20 @@ News
 
 Publications
 ======
-**Time Interval Aware Self-Attention for Sequential Recommendation.** [[pdf](/files/wsdm20.pdf)] [[code](https://github.com/JiachengLi1995/TiSASRec)]\
-**Jiacheng Li**, Yujie Wang, Julian McAuley.\
-International Conference on Web Search and Data Mining (WSDM) 2020.
+**Time Interval Aware Self-Attention for Sequential Recommendation.** [[pdf](/files/wsdm20.pdf)] [[code](https://github.com/JiachengLi1995/TiSASRec)]
+<br/>**Jiacheng Li**, Yujie Wang, Julian McAuley.
+<br/>International Conference on Web Search and Data Mining (WSDM) 2020.
 
-**Justifying Recommendations using Distantly-Labeled Reviews and Fine-grained Aspect.** [[pdf](/files/emnlp19a.pdf)] [[code](https://github.com/nijianmo/recsys_justification)]\
-Jianmo Ni, **Jiacheng Li**, Julian McAuley.\
-Empirical Methods in Natural Language Processing (EMNLP) 2019.
+**Justifying Recommendations using Distantly-Labeled Reviews and Fine-grained Aspect.** [[pdf](/files/emnlp19a.pdf)] [[code](https://github.com/nijianmo/recsys_justification)]
+<br/>Jianmo Ni, **Jiacheng Li**, Julian McAuley.
+<br/>Empirical Methods in Natural Language Processing (EMNLP) 2019.
+
+
+Work Experience
+======
+Machine Learning for Natural Language Processing Intern, Bosch, Sunnyvale, CA, US.
+<br/>June 2020 - Sep 2020.
+
+
+Graduate Student Reseacher, Center for Microbiome Innovation, La Jolla, CA, US.
+<br/>Sep 2019 - June 2020.
