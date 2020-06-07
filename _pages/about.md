@@ -10,6 +10,7 @@ redirect_from:
 
 I'm a Ph.D. student at UC San Diego beginning in 2020 Fall, advised by Prof. Julian McAuley. 
 <br/>I'm interested in informatioin extraction, recommender systems, deep learning.
+<br/>**For UCSD Students:** If you have some good ideas associated with my researching areas above and want to discuss with me, please email me to have further communication.
 
 News
 ======
@@ -30,8 +31,10 @@ Publications
 Work Experience
 ======
 Machine Learning for Natural Language Processing Intern, Bosch, Sunnyvale, CA, US.
+<br/>Mentor: [Haibo Ding](https://www.linkedin.com/in/haibonlp/)
 <br/>June 2020 - Sep 2020.
 
 
 Graduate Student Reseacher, Center for Microbiome Innovation, La Jolla, CA, US.
+<br/>Mentor: [Chun-nan Hsu](https://profiles.ucsd.edu/chun-nan.hsu). 
 <br/>Sep 2019 - June 2020.
