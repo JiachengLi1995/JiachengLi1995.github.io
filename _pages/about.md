@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a Ph.D. student at UC San Diego beginning in 2020 Fall, advised by Prof. Julian McAuley. 
 <br/>I'm interested in informatioin extraction, recommender systems, deep learning.
-<br/>**For UCSD Students:** If you have some good ideas associated with my researching areas above and want to discuss with me, please email me to have further communication.
+<br/>**For UCSD Students:** If you have some good ideas associated with my researching areas and want to discuss with me, please email me to have further communication.
 
 News
 ======
