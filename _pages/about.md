@@ -19,8 +19,8 @@ News
 
 Publications
 ======
-**SeNsER: Learning Cross-Building Sensor Metadata Tagger.**
-<br/>Yang Jiao, **Jiacheng Li**, Jiaman Wu, Dezhi Hong, Rajesh Gupta and Jingbo Shang
+**SeNsER: Learning Cross-Building Sensor Metadata Tagger.** [[pdf](/files/SeNsER_emnlp2020.pdf)] [[code](https://github.com/JiachengLi1995/SeNsER)]
+<br/>Yang Jiao*, **Jiacheng Li***, Jiaman Wu, Dezhi Hong, Rajesh Gupta and Jingbo Shang
 <br/>Empirical Methods in Natural Language Processing (EMNLP) 2020.
 
 **Time Interval Aware Self-Attention for Sequential Recommendation.** [[pdf](/files/wsdm20.pdf)] [[code](https://github.com/JiachengLi1995/TiSASRec)]
