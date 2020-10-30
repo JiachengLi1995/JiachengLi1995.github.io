@@ -15,7 +15,7 @@ I'm a Ph.D. student at UC San Diego beginning in 2020 Fall, advised by Prof. Jul
 News
 ======
 [2020/10] I get married with my lover Yujie Wang.
-[2020/06] I am going to start my summer intern at [Bosch](https://www.bosch.us/).
+<br/>[2020/06] I am going to start my summer intern at [Bosch](https://www.bosch.us/).
 
 
 Publications
