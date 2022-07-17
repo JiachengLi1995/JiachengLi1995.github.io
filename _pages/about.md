@@ -9,13 +9,14 @@ redirect_from:
 ---
 
 I'm a Ph.D. candidate advised by Prof. Julian McAuley and Prof. Jingbo Shang at UC San Diego.
-<br/> My research interests include natural language processing and recommender systems. 
-<br/> My expected graduation date is June 2023. I am open to part-time jobs after Summer and seeking full-time jobs.
+<br/> My research interests include natural language processing and recommender systems.
+
+**My expected graduation date is June 2023. I am open to part-time jobs after Summer and seeking full-time jobs.**
 
 Publications
 ======
 **Coarse-to-Fine Sparse Sequential Recommendation.** [[pdf](https://arxiv.org/pdf/2204.01839.pdf)] [[code](https://github.com/JiachengLi1995/CAFE)]
-<br/>Jiacheng Li, Jingbo Shang, Julian McAuley
+<br/>Jiacheng Li, Tong Zhao, Jin Li, Jim Chan, Christos Faloutsos, George Karypis, Soo-Min Pantel, Julian McAuley
 <br/>International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) 2022.
 
 **UCTopic: Unsupervised Contrastive Learning for Phrase Representations and Topic Mining.** [[pdf](https://aclanthology.org/2022.acl-long.426.pdf)] [[code](https://github.com/JiachengLi1995/UCTopic)]
