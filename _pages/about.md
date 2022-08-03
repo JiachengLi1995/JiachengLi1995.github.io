@@ -15,6 +15,10 @@ I'm a Ph.D. candidate advised by Prof. Julian McAuley and Prof. Jingbo Shang at 
 
 Publications
 ======
+**SPOT: Knowledge-Enhanced Language Representations for Information Extraction**
+<br/>Jiacheng Li, Yannis Katsis, Tyler Baldwin, Ho-Cheol Kim, Andrew Bartko, Julian McAuley, Chun-Nan Hsu
+<br/>31st ACM International Conference on Information and Knowledge Management (CIKM) 2022.
+
 **Coarse-to-Fine Sparse Sequential Recommendation.** [[pdf](https://arxiv.org/pdf/2204.01839.pdf)] [[code](https://github.com/JiachengLi1995/CAFE)]
 <br/>Jiacheng Li, Tong Zhao, Jin Li, Jim Chan, Christos Faloutsos, George Karypis, Soo-Min Pantel, Julian McAuley
 <br/>International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) 2022.
