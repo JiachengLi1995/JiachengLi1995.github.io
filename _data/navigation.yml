@@ -16,7 +16,8 @@ main:
   #   url: /year-archive/
     
   - title: "CV"
-    url: /files/CV.pdf
+   url: https://drive.google.com/file/d/1CvjZrtYsc6gyWHpW_p3f6ow2v7_P6Typ/view?usp=sharing
+  #  url: /files/CV.pdf
     
   # - title: "Blog posts"
   #   url: /posts/
