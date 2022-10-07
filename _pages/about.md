@@ -11,11 +11,15 @@ redirect_from:
 I'm a Ph.D. candidate advised by Prof. Julian McAuley and Prof. Jingbo Shang at UC San Diego.
 <br/> My research interests include natural language processing and recommender systems.
 
-**My expected graduation date is June 2023. I am open to part-time jobs after Summer and seeking full-time jobs.**
+**My expected graduation date is June 2023. I am open to part-time jobs in Spring 2023 and seeking full-time jobs starting after June 2023.**
 
 Publications
 ======
-**SPOT: Knowledge-Enhanced Language Representations for Information Extraction**
+**Fine-grained Contrastive Learning for Relation Extraction.** [[pdf](https://arxiv.org/pdf/2205.12491)]
+<br/>William Hogan, Jiacheng Li, Jingbo Shang
+<br/>Empirical Methods in Natural Language Processing (EMNLP) 2022.
+
+**SPOT: Knowledge-Enhanced Language Representations for Information Extraction** [[pdf](https://arxiv.org/pdf/2208.09625.pdf)]
 <br/>Jiacheng Li, Yannis Katsis, Tyler Baldwin, Ho-Cheol Kim, Andrew Bartko, Julian McAuley, Chun-Nan Hsu
 <br/>31st ACM International Conference on Information and Knowledge Management (CIKM) 2022.
 
@@ -48,25 +52,34 @@ Preprints
 **Personalized Showcases: Generating Multi-Modal Explanations for Recommendations.** [[pdf](https://arxiv.org/pdf/2207.00422)]
 <br/>An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian McAuley
 
+**UCEpic: Unifying Aspect Planning and Lexical Constraints for Explainable Recommendation.** [[pdf](https://arxiv.org/pdf/2209.13885.pdf)]
+<br/>Jiacheng Li, Zhankui He, Jingbo Shang, Julian McAuley
 
-**Fine-grained Contrastive Learning for Relation Extraction.** [[pdf](https://arxiv.org/pdf/2205.12491)]
-<br/>William Hogan, Jiacheng Li, Jingbo Shang
+
 
 Work Experience
 ======
+Applied Scientist Intern, Amazon, Seattle, WA, US.
+<br/>Mentor: [Xian Li](https://www.linkedin.com/in/xianl/) and [Chenwei Zhang](https://cwzhang.com/), Product Graph Team.
+<br/>Project: Attribute-Enhanced Personalized Product Highlight Generation.
+<br/>Jun 2022 - Sep 2022.
 
 Applied Scientist Intern, Amazon, Seattle, WA, US.
-<br/>Mentor: Jin Li and Ming Wang, Personalization Team. 
+<br/>Mentor: [Jin Li](https://www.linkedin.com/in/jinli3/) and [Ming Wang](https://www.linkedin.com/in/ming-wang-16404268/), Product Semantics Team.
+<br/>Project: Attribute-Enhanced Personalized Product Highlight Generation.
 <br/>Jun 2022 - Sep 2022.
 
 Graduate Student Reseacher, Center for Microbiome Innovation, La Jolla, CA, US.
-<br/>Mentor: [Chun-nan Hsu](https://profiles.ucsd.edu/chun-nan.hsu). 
+<br/>Mentor: [Chun-nan Hsu](https://profiles.ucsd.edu/chun-nan.hsu).
+<br/>Project: Knowledge Base Construct for Microbiome.
 <br/>Sep 2019 - June 2022.
 
 Applied Scientist Intern, Amazon, Seattle, WA, US.
-<br/>Mentor: [Tong Zhao](https://www.linkedin.com/in/tonytongzhao/), Personalization Team. 
+<br/>Mentor: [Tong Zhao](https://www.linkedin.com/in/tonytongzhao/), Product Semantics Team.
+<br/>Project: Shopping Intention Detection for Sequential Recommendation.
 <br/>Jun 2021 - Sep 2021.
 
 Machine Learning for Natural Language Processing Intern, Bosch, Sunnyvale, CA, US.
 <br/>Mentor: [Haibo Ding](https://www.linkedin.com/in/haibonlp/)
+<br/>Project: Weakly Supervised Named Entity Tagging with Learnable Logical Rules.
 <br/>Jun 2020 - Sep 2020.
