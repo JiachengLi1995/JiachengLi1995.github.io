@@ -61,7 +61,7 @@ Work Experience
 ======
 Applied Scientist Intern, Amazon, Seattle, WA, US.
 <br/>Mentor: [Xian Li](https://www.linkedin.com/in/xianl/) and [Chenwei Zhang](https://cwzhang.com/), Product Graph Team.
-<br/>Project: Attribute-Enhanced Personalized Product Highlight Generation.
+<br/>Project: Neural-Symbolic Reasoning on Product Knowledge Graph.
 <br/>Sep 2022 - Dec 2022.
 
 Applied Scientist Intern, Amazon, Seattle, WA, US.
