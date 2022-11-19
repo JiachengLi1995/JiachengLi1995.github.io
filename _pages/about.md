@@ -16,7 +16,7 @@ I'm a Ph.D. candidate advised by Prof. Julian McAuley and Prof. Jingbo Shang at 
 Publications
 ======
 **PrimeNet: Pre-trainingfor Irregular Multivariate Time Series.**
-<br/>Ranak Chowdhury, Jiacheng Li, Xiyuan Zhang, Rajesh, Gupta, Jingbo Shang, Dezhi Hong.  
+<br/>Ranak Roy Chowdhury, Jiacheng Li, Xiyuan Zhang, Dezhi Hong, Rajesh Gupta, Jingbo Shang
 <br/>AAAI Conference on Artificial Intelligence (AAAI) 2023.
 
 **Fine-grained Contrastive Learning for Relation Extraction.** [[pdf](https://arxiv.org/pdf/2205.12491)]
