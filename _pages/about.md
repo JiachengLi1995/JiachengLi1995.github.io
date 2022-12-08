@@ -11,8 +11,6 @@ redirect_from:
 I'm a Ph.D. candidate advised by Prof. Julian McAuley and Prof. Jingbo Shang at UC San Diego.
 <br/> My research interests include natural language processing and recommender systems.
 
-**My expected graduation date is June 2023. I am open to part-time jobs in Spring 2023 and seeking full-time jobs starting after June 2023.**
-
 Publications
 ======
 **PrimeNet: Pre-training for Irregular Multivariate Time Series.**
