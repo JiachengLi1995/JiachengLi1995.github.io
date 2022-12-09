@@ -1,0 +1,1213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Google Local review data</title>
+    <meta name="author" content="Jiacheng Li">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script type="application/ld+json">
+    {"@context":"http://schema.org/",
+     "@type":"Dataset",
+     "name":"Google Local review data 2018",
+     "description":"## Context\n\nThis Dataset contains review information on Google map (ratings, text, images, etc.), business metadata (address, geographical info, descriptions, category information, price, open hours, and MISC info), and links (relative businesses). The total number of reviews is 233.1 million.\n\n- New reviews: \n\n    - Current data includes reviews in the range May 1996 - Oct 2018.\n\n- Metadata:     - We have added transaction metadata for each review shown on the review page. \n\n    - Added more detailed metadata of the product landing page.\n\n\n## Acknowledgements\n\nIf you publish articles based on this dataset, please cite the following paper:\n\n- Jianmo Ni, Jiacheng Li, Julian McAuley. Justifying recommendations using distantly-labeled reviews and fined-grained aspects. EMNLP, 2019.",
+     "url":"https://jiachengli1995.github.io/google/index.html",
+     "sameAs":"","version":2,
+     "creator":{"@type":"Organization","name":"UCSD CSE Research Project","url":"https://jiachengli1995.github.io/google/index.html"}}
+    </script>
+
+
+    <script type="text/javascript" language="javascript"  src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cseweb.ucsd.edu/~jmcauley/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139424956-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139424956-2');
+    </script>
+  </head>
+<body>
+
+<div id="left_column">
+</div>
+
+<div id="main">
+<!-- <div id="header"> -->
+  <h1>Google Local Data (2021)</h1>
+
+  <p><b><a href="https://jiachengli1995.github.io/">Jiacheng Li</a></b>, UCSD</p>
+  <p><b><a href="https://www.linkedin.com/in/tianyang-zhang-sky/">Tianyang Zhang</a></b>, Google</p>
+
+
+<h2>Description</h2>
+
+<p>This Dataset is an updated version of the <a href="http://jmcauley.ucsd.edu/data/amazon/index_2014.html">Amazon review dataset</a> released in 2014. As in the previous version, this dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). In addition, this version provides the following features:
+  <ul>
+    <li>More reviews:
+      <ul>
+        <li>
+          The total number of reviews is 233.1 million (142.8 million in 2014).
+        </li>
+      </ul>
+    </li>
+    <li>Newer reviews:
+      <ul>
+        <li>
+           Current data includes reviews in the range May 1996 - Oct 2018.
+        </li>
+      </ul>
+    </li>
+    <li>Metadata:
+      <ul>
+        <li>We have added transaction metadata for each review shown on the review page. Such information includes:  
+          <ul>
+            <li>Product information, e.g. color (white or black), size (large or small), package type (hardcover or electronics), etc.</li>
+            <li>Product images that are taken after the user received the product.</li>
+          </ul>
+        </li>
+        <li>Added more detailed metadata of the product landing page. Such detailed information includes:
+          <ul>
+            <li>Bullet-point descriptions under product title.</li>
+            <li>Technical details table (attribute-value pairs).</li>
+            <li>Similar products table.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>More categories:
+      <ul>
+        <li>
+           Includes 5 new product categories.
+        </li>
+      </ul>
+    </li>  
+  </ul>
+</p>
+
+<p><b>You can also download the review data from our previous datasets.</b></p>
+<p><a href="http://jmcauley.ucsd.edu/data/amazon/links.html">Amazon review (2014)</a></p>
+<p><a href="http://snap.stanford.edu/data/web-Amazon-links.html">Amazon review (2013)</a></p>
+
+
+<h2>Citation</h2>
+<p>Please cite the following paper if you use the data in any way:</p>
+<p>
+  <b>Justifying recommendations using distantly-labeled reviews and fined-grained aspects</b><br>
+  Jianmo Ni, Jiacheng Li, Julian McAuley<br>
+  <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019<br>
+  <a href="http://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19a.pdf">pdf</a>
+</p>
+
+<h2>News</h2>
+<p>05/2021 We updated <b>high resolution image urls</b> to the metadata! </p>
+<p>08/2020 We have updated the metadata and now it includes much less HTML/CSS code. Feel free to download the updated data! </p>
+
+<h2>Note</h2>
+<p>We provide a <a href="https://colab.research.google.com/drive/1Zv6MARGQcrBbLHyjPVVMZVnRWsRnVMpV">colab notebook</a> that helps you parse and clean the data. For example:
+	<ul>
+		<li>Load the metadata (e.g. as JSON or DataFrame)</li>
+		<li>Check if title has HTML contents and filter them</li>
+	</ul>
+</p>
+<p>We provide a <a href="https://colab.research.google.com/drive/12r4KJVbNqjjhiZ6aeiaG809x4-Tg5fm8?usp=sharing">colab notebook</a> that helps you find target products and obtain their reviews!
+</p>
+<p><b>We appreciate any help or feedback to improve the quality of our dataset! Feel free to reach us at jin018@ucsd.edu if you meet any following questions:</b>
+	<ul>
+		<li>Unparsed HTML contents</li>
+		<li>Duplicate items which have same reviews</li>
+	</ul>
+</p>
+
+
+<h2>Directory</h2>
+
+  <p>	
+  	<li>
+  		<b><a href="#files">Files</a></b>
+  		<ul>
+  			<b><a href="#complete-data">complete data</a></b>
+  		</ul>
+  		<ul>
+  			<b><a href="#subsets">K-cores and ratings-only data</a></b>
+  		</ul> 
+  		<ul>
+  			<b><a href="#sample-review">sample review</a></b>
+  		</ul>
+  		<ul>
+  			<b><a href="#sample-metadata">sample metadata </a></b>
+  		</ul>
+  	</li>
+	<li>
+  		<b><a href="#code">Code</a></b> 
+  	</li>
+  </p>
+
+
+<a name="files"></a>
+<h2>Files</h2>
+
+
+<a name="complete-data"></a>
+<h3>Complete review data</h3>
+
+<p>Please only download these (large!) files if you really need them. We recommend using the smaller datasets (i.e. k-core and CSV files) as shown in the <a href="#subsets">next section</a>.</p> 
+
+<p><b>raw review data</b> (34gb) - all 233.1 million reviews</p>
+
+<!-- <p><b><a href="amazon_readme.txt">user review data</a></b> (18gb) - duplicate items removed (83.68 million reviews), sorted by user</p>
+<p><b><a href="amazon_readme.txt">product review data</a></b> (18gb) - duplicate items removed, sorted by product</p> -->
+
+<p><b>ratings only</b> (6.7gb) - same as above, in csv form without reviews or metadata</b>
+<p><b>5-core</b> (14.3gb) - subset of the data in which all users and items have at least 5 reviews (75.26 million reviews)</p>
+
+<!-- <p>Finally, the following file removes duplicates more aggressively, removing duplicates even if they are written by different users. This accounts for users with multiple accounts or plagiarized reviews. Such duplicates account for less than 1 percent of reviews, though this dataset is probably preferable for sentiment analysis type tasks:</p>
+
+<p><b>aggressively deduplicated data</b> (18gb) - no duplicates whatsoever (82.83 million reviews)</p> -->
+
+<p><b>Per-category data</b> - the review and product metadata for each category.</p>
+<p>To download the complete review data and the per-category files, the following links will direct you to enter a form. Please <a href = "mailto: abc@example.com">contact me</a> if you can't get access to the form.</p>
+<p>
+<table class="code-table" style="font-size: 0.7em; width:90%">
+<tr> 
+      <td>Amazon Fashion</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (883,636 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (186,637 products)</td> 
+    </tr>
+
+<tr> 
+      <td>All Beauty</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (371,345 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (32,992 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Appliances</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (602,777 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (30,459 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Arts, Crafts and Sewing</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (2,875,917 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (303,426 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Automotive</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (7,990,166 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (932,019 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Books</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (51,311,621 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (2,935,525 products)</td> 
+    </tr>
+
+<tr> 
+      <td>CDs and Vinyl</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (4,543,369 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (544,442 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Cell Phones and Accessories</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (10,063,255 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (590,269 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Clothing Shoes and Jewelry</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (32,292,099 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (2,685,059 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Digital Music</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (1,584,082 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (465,392 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Electronics</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (20,994,353 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (786,868 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Gift Cards</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (147,194 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (1,548 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Grocery and Gourmet Food</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,074,160 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (287,209 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Home and Kitchen</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (21,928,568 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (1,301,225 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Industrial and Scientific</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (1,758,333 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (167,524 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Kindle Store</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,722,988 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (493,859 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Luxury Beauty</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (574,628 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (12,308 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Magazine Subscriptions</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (89,689 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (3,493 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Movies and TV</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (8,765,568 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (203,970 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Musical Instruments</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (1,512,530 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (120,400 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Office Products</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,581,313 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (315,644 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Patio, Lawn and Garden</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,236,058 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (279,697 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Pet Supplies</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (6,542,483 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (206,141 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Prime Pantry</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (471,614 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (10,815 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Software</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (459,436 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (26,815 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Sports and Outdoors</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (12,980,837 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (962,876 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Tools and Home Improvement</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (9,015,203 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (571,982 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Toys and Games</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (8,201,231 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (634,414 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Video Games</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (2,565,349 reviews)</td> 
+      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (84,893 products)</td> 
+    </tr>
+<!-- <tr> 
+      <td>Amazon Fashion</td> 
+      <td><a href="readme.txt">reviews</a> (883,636 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (186,637 products)</td> 
+    </tr>
+
+<tr> 
+      <td>All Beauty</td> 
+      <td><a href="readme.txt">reviews</a> (371,345 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (32,992 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Appliances</td> 
+      <td><a href="readme.txt">reviews</a> (602,777 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (30,459 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Arts, Crafts and Sewing</td> 
+      <td><a href="readme.txt">reviews</a> (2,875,917 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (303,426 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Automotive</td> 
+      <td><a href="readme.txt">reviews</a> (7,990,166 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (932,019 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Books</td> 
+      <td><a href="readme.txt">reviews</a> (51,311,621 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (2,935,525 products)</td> 
+    </tr>
+
+<tr> 
+      <td>CDs and Vinyl</td> 
+      <td><a href="readme.txt">reviews</a> (4,543,369 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (544,442 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Cell Phones and Accessories</td> 
+      <td><a href="readme.txt">reviews</a> (10,063,255 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (590,269 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Clothing, Shoes and Jewelry</td> 
+      <td><a href="readme.txt">reviews</a> (32,292,099 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (2,685,059 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Digital Music</td> 
+      <td><a href="readme.txt">reviews</a> (1,584,082 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (465,392 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Electronics</td> 
+      <td><a href="readme.txt">reviews</a> (20,994,353 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (786,868 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Gift Cards</td> 
+      <td><a href="readme.txt">reviews</a> (147,194 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (1,548 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Grocery and Gourmet Food</td> 
+      <td><a href="readme.txt">reviews</a> (5,074,160 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (287,209 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Home and Kitchen</td> 
+      <td><a href="readme.txt">reviews</a> (21,928,568 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (1,301,225 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Industrial and Scientific</td> 
+      <td><a href="readme.txt">reviews</a> (1,758,333 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (167,524 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Kindle Store</td> 
+      <td><a href="readme.txt">reviews</a> (5,722,988 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (493,859 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Luxury Beauty</td> 
+      <td><a href="readme.txt">reviews</a> (574,628 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (12,308 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Magazine Subscriptions</td> 
+      <td><a href="readme.txt">reviews</a> (89,689 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (3,493 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Movies and TV</td> 
+      <td><a href="readme.txt">reviews</a> (8,765,568 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (203,970 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Musical Instruments</td> 
+      <td><a href="readme.txt">reviews</a> (1,512,530 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (120,400 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Office Products</td> 
+      <td><a href="readme.txt">reviews</a> (5,581,313 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (315,644 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Patio, Lawn and Garden</td> 
+      <td><a href="readme.txt">reviews</a> (5,236,058 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (279,697 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Pet Supplies</td> 
+      <td><a href="readme.txt">reviews</a> (6,542,483 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (206,141 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Prime Pantry</td> 
+      <td><a href="readme.txt">reviews</a> (471,614 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (10,815 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Software</td> 
+      <td><a href="readme.txt">reviews</a> (459,436 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (26,815 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Sports and Outdoors</td> 
+      <td><a href="readme.txt">reviews</a> (12,980,837 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (962,876 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Tools and Home Improvement</td> 
+      <td><a href="readme.txt">reviews</a> (9,015,203 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (571,982 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Toys and Games</td> 
+      <td><a href="readme.txt">reviews</a> (8,201,231 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (634,414 products)</td> 
+    </tr>
+
+<tr> 
+      <td>Video Games</td> 
+      <td><a href="readme.txt">reviews</a> (2,565,349 reviews)</td> 
+      <td><a href="readme.txt">metadata</a> (84,893 products)</td> 
+    </tr> -->
+</table>
+</p>
+
+
+<a name="subsets"></a>
+<h3>&quot;Small&quot; subsets for experimentation</h3>
+
+<p>If you're using this data for a class project (or similar) please consider using one of these smaller datasets below before requesting the larger files.</p> 
+
+<p><b>K-cores</b> (i.e., dense subsets): These data have been reduced to extract the <a href="https://en.wikipedia.org/wiki/Degeneracy_(graph_theory)">k-core</a>, such that each of the remaining users and items have k reviews each.</p>
+
+<p><b>Ratings only:</b> These datasets include no metadata or reviews, but only (item,user,rating,timestamp) tuples. Thus they are suitable for use with <a href="http://www.mymedialite.net/">mymedialite</a> (or similar) packages.</p>
+<p>You can directly download the following smaller per-category datasets.</p>
+<p>
+<table class="code-table" style="font-size: 0.7em; width:90%">
+
+<tr> 
+      <td>Amazon Fashion</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/AMAZON_FASHION_5.json.gz">5-core</a> (3,176 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/AMAZON_FASHION.csv">ratings only</a> (883,636 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>All Beauty</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/All_Beauty_5.json.gz">5-core</a> (5,269 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/All_Beauty.csv">ratings only</a> (371,345 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Appliances</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Appliances_5.json.gz">5-core</a> (2,277 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Appliances.csv">ratings only</a> (602,777 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Arts, Crafts and Sewing</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Arts_Crafts_and_Sewing_5.json.gz">5-core</a> (494,485 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Arts_Crafts_and_Sewing.csv">ratings only</a> (2,875,917 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Automotive</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Automotive_5.json.gz">5-core</a> (1,711,519 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Automotive.csv">ratings only</a> (7,990,166 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Books</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Books_5.json.gz">5-core</a> (27,164,983 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Books.csv">ratings only</a> (51,311,621 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>CDs and Vinyl</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/CDs_and_Vinyl_5.json.gz">5-core</a> (1,443,755 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/CDs_and_Vinyl.csv">ratings only</a> (4,543,369 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Cell Phones and Accessories</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Cell_Phones_and_Accessories_5.json.gz">5-core</a> (1,128,437 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Cell_Phones_and_Accessories.csv">ratings only</a> (10,063,255 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Clothing, Shoes and Jewelry</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Clothing_Shoes_and_Jewelry_5.json.gz">5-core</a> (11,285,464 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Clothing_Shoes_and_Jewelry.csv">ratings only</a> (32,292,099 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Digital Music</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Digital_Music_5.json.gz">5-core</a> (169,781 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Digital_Music.csv">ratings only</a> (1,584,082 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Electronics</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Electronics_5.json.gz">5-core</a> (6,739,590 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Electronics.csv">ratings only</a> (20,994,353 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Gift Cards</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Gift_Cards_5.json.gz">5-core</a> (2,972 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Gift_Cards.csv">ratings only</a> (147,194 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Grocery and Gourmet Food</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Grocery_and_Gourmet_Food_5.json.gz">5-core</a> (1,143,860 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Grocery_and_Gourmet_Food.csv">ratings only</a> (5,074,160 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Home and Kitchen</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Home_and_Kitchen_5.json.gz">5-core</a> (6,898,955 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Home_and_Kitchen.csv">ratings only</a> (21,928,568 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Industrial and Scientific</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Industrial_and_Scientific_5.json.gz">5-core</a> (77,071 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Industrial_and_Scientific.csv">ratings only</a> (1,758,333 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Kindle Store</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Kindle_Store_5.json.gz">5-core</a> (2,222,983 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Kindle_Store.csv">ratings only</a> (5,722,988 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Luxury Beauty</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Luxury_Beauty_5.json.gz">5-core</a> (34,278 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Luxury_Beauty.csv">ratings only</a> (574,628 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Magazine Subscriptions</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Magazine_Subscriptions_5.json.gz">5-core</a> (2,375 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Magazine_Subscriptions.csv">ratings only</a> (89,689 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Movies and TV</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Movies_and_TV_5.json.gz">5-core</a> (3,410,019 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Movies_and_TV.csv">ratings only</a> (8,765,568 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Musical Instruments</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Musical_Instruments_5.json.gz">5-core</a> (231,392 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Musical_Instruments.csv">ratings only</a> (1,512,530 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Office Products</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Office_Products_5.json.gz">5-core</a> (800,357 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Office_Products.csv">ratings only</a> (5,581,313 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Patio, Lawn and Garden</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Patio_Lawn_and_Garden_5.json.gz">5-core</a> (798,415 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Patio_Lawn_and_Garden.csv">ratings only</a> (5,236,058 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Pet Supplies</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Pet_Supplies_5.json.gz">5-core</a> (2,098,325 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Pet_Supplies.csv">ratings only</a> (6,542,483 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Prime Pantry</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Prime_Pantry_5.json.gz">5-core</a> (137,788 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Prime_Pantry.csv">ratings only</a> (471,614 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Software</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Software_5.json.gz">5-core</a> (12,805 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Software.csv">ratings only</a> (459,436 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Sports and Outdoors</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Sports_and_Outdoors_5.json.gz">5-core</a> (2,839,940 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Sports_and_Outdoors.csv">ratings only</a> (12,980,837 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Tools and Home Improvement</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Tools_and_Home_Improvement_5.json.gz">5-core</a> (2,070,831 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Tools_and_Home_Improvement.csv">ratings only</a> (9,015,203 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Toys and Games</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Toys_and_Games_5.json.gz">5-core</a> (1,828,971 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Toys_and_Games.csv">ratings only</a> (8,201,231 ratings)</td> 
+    </tr>
+
+<tr> 
+      <td>Video Games</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Video_Games_5.json.gz">5-core</a> (497,577 reviews)</td> 
+      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Video_Games.csv">ratings only</a> (2,565,349 ratings)</td> 
+    </tr>
+
+</table>
+</p>
+
+
+<h3>Data format</h3>
+
+<p>Format is one-review-per-line in json. See examples below for further help reading the data.</p>
+
+<a name="sample-review"></a>
+<h3>Sample review:</h3>
+
+<p>
+<div class="code">{
+"image": ["https://images-na.ssl-images-amazon.com/images/I/71eG75FTJJL._SY88.jpg"], 
+"overall": 5.0, 
+"vote": "2", 
+"verified": True, 
+"reviewTime": "01 1, 2018", 
+"reviewerID": "AUI6WTTT0QZYS", 
+"asin": "5120053084", 
+"style": {
+	"Size:": "Large", 
+	"Color:": "Charcoal"
+	}, 
+"reviewerName": "Abbey", 
+"reviewText": "I now have 4 of the 5 available colors of this shirt... ", 
+"summary": "Comfy, flattering, discreet--highly recommended!", 
+"unixReviewTime": 1514764800
+}
+</div>
+
+<div class="code">{
+  "reviewerID": "A2SUAM1J3GNN3B",
+  "asin": "0000013714",
+  "reviewerName": "J. McDonald",
+  "vote": 5,
+  "style": {
+    "Format:": "Hardcover"
+  },
+  "reviewText": "I bought this for my husband who plays the piano.  He is having a wonderful time playing these old hymns.  The music  is at times hard to read because we think the book was published for singing from more than playing from.  Great purchase though!",
+  "overall": 5.0,
+  "summary": "Heavenly Highway Hymns",
+  "unixReviewTime": 1252800000,
+  "reviewTime": "09 13, 2009"
+}
+</div>
+</p>
+
+<p>where
+
+  <ul>
+    <li><tt>reviewerID</tt> - ID of the reviewer, e.g. <a href="http://www.amazon.com/gp/cdp/member-reviews/A2SUAM1J3GNN3B">A2SUAM1J3GNN3B</a></li>
+    <li><tt>asin</tt> - ID of the product, e.g. <a href="http://www.amazon.com/dp/0000013714">0000013714</a></li>
+    <li><tt>reviewerName</tt> - name of the reviewer</li>
+    <li><tt>vote</tt> - helpful votes of the review</li>
+    <li><tt>style</tt> - a disctionary of the product metadata, e.g., "Format" is "Hardcover"</li>
+    <li><tt>reviewText</tt> - text of the review</li>
+    <li><tt>overall</tt> - rating of the product</li>
+    <li><tt>summary</tt> - summary of the review</li>
+    <li><tt>unixReviewTime</tt> - time of the review (unix time)</li>
+    <li><tt>reviewTime</tt> - time of the review (raw)</li>
+    <li><tt>image</tt> - images that users post after they have received the product</li>
+  </ul>
+</p>
+
+<h3>Metadata</h3>
+
+<p>
+Metadata includes descriptions, price, sales-rank, brand info, and co-purchasing links:
+</p>
+
+<p><b>metadata</b> (24gb) - metadata for 15.5 million products</p>
+<a name="sample-metadata"></a>
+<h3>Sample metadata:</h3>
+
+<p>
+<div class="code">{
+  "asin": "0000031852",
+  "title": "Girls Ballet Tutu Zebra Hot Pink",
+  "feature": ["Botiquecutie Trademark exclusive Brand",
+              "Hot Pink Layered Zebra Print Tutu",
+              "Fits girls up to a size 4T",
+              "Hand wash / Line Dry",
+              "Includes a Botiquecutie TM Exclusive hair flower bow"],
+  "description": "This tutu is great for dress up play for your little ballerina. Botiquecute Trade Mark exclusive brand. Hot Pink Zebra print tutu.", 
+  "price": 3.17,
+  "imageURL": "http://ecx.images-amazon.com/images/I/51fAmVkTbyL._SY300_.jpg",
+  "imageURLHighRes": "http://ecx.images-amazon.com/images/I/51fAmVkTbyL.jpg",
+  "also_buy": ["B00JHONN1S", "B002BZX8Z6", "B00D2K1M3O", "0000031909", "B00613WDTQ", "B00D0WDS9A", "B00D0GCI8S", "0000031895", "B003AVKOP2", "B003AVEU6G", "B003IEDM9Q", "B002R0FA24", "B00D23MC6W", "B00D2K0PA0", "B00538F5OK", "B00CEV86I6", "B002R0FABA", "B00D10CLVW", "B003AVNY6I", "B002GZGI4E", "B001T9NUFS", "B002R0F7FE", "B00E1YRI4C", "B008UBQZKU", "B00D103F8U", "B007R2RM8W"],
+  "also_viewed": ["B002BZX8Z6", "B00JHONN1S", "B008F0SU0Y", "B00D23MC6W", "B00AFDOPDA", "B00E1YRI4C", "B002GZGI4E", "B003AVKOP2", "B00D9C1WBM", "B00CEV8366", "B00CEUX0D8", "B0079ME3KU", "B00CEUWY8K", "B004FOEEHC", "0000031895", "B00BC4GY9Y", "B003XRKA7A", "B00K18LKX2", "B00EM7KAG6", "B00AMQ17JA", "B00D9C32NI", "B002C3Y6WG", "B00JLL4L5Y", "B003AVNY6I", "B008UBQZKU", "B00D0WDS9A", "B00613WDTQ", "B00538F5OK", "B005C4Y4F6", "B004LHZ1NY", "B00CPHX76U", "B00CEUWUZC", "B00IJVASUE", "B00GOR07RE", "B00J2GTM0W", "B00JHNSNSM", "B003IEDM9Q", "B00CYBU84G", "B008VV8NSQ", "B00CYBULSO", "B00I2UHSZA", "B005F50FXC", "B007LCQI3S", "B00DP68AVW", "B009RXWNSI", "B003AVEU6G", "B00HSOJB9M", "B00EHAGZNA", "B0046W9T8C", "B00E79VW6Q", "B00D10CLVW", "B00B0AVO54", "B00E95LC8Q", "B00GOR92SO", "B007ZN5Y56", "B00AL2569W", "B00B608000", "B008F0SMUC", "B00BFXLZ8M"],
+  "salesRank": {"Toys & Games": 211836},
+  "brand": "Coxlures",
+  "categories": [["Sports & Outdoors", "Other Sports", "Dance"]]
+}
+</div>
+</p>
+
+<p>where
+
+  <ul>
+    <li><tt>asin</tt> - ID of the product, e.g. <a href="http://www.amazon.com/dp/0000031852">0000031852</a></li>
+    <li><tt>title</tt> - name of the product</li>
+    <li><tt>feature</tt> - bullet-point format features of the product</li>
+    <li><tt>description</tt> - description of the product</li>
+    <li><tt>price</tt> - price in US dollars (at time of crawl)</li>
+    <li><tt>imageURL</tt> - url of the product image</li>
+    <li><tt>imageURL</tt> - url of the high resolution product image</li>
+    <li><tt>related</tt> - related products (also bought, also viewed, bought together, buy after viewing)</li>
+    <li><tt>salesRank</tt> - sales rank information</li>
+    <li><tt>brand</tt> - brand name</li>
+    <li><tt>categories</tt> - list of categories the product belongs to</li>
+    <li><tt>tech1</tt> - the first technical detail table of the product</li>
+    <li><tt>tech2</tt> - the second technical detail table of the product</li>
+    <li><tt>similar</tt> - similar product table</li>
+  </ul>
+</p>
+
+<!-- <h3>Visual Features</h3>
+
+<p>We extracted visual features from each product image using a deep CNN (see citation below). Image features are stored in a binary format, which consists of 10 characters (the product ID), followed by 4096 floats (repeated for every product). See files below for further help reading the data.</p>
+
+<p><b><a href="amazon_readme.txt">visual features</a></b> (141gb) - visual features for all products</p>
+
+<p>The images themselves can be extracted from the <tt>image</tt> field in the metadata files.</p> -->
+
+<!-- <h2>Per-category files</h3>
+
+<p>
+Below are files for individual product categories, which have already had duplicate item reviews removed.
+</p>
+
+<p>
+<table class="code-table" style="font-size: 0.7em; width:90%">
+
+<!--
+<tr>
+  <td>Category</td>
+  <td>Reviews</td>
+  <td>Metadata</td>
+  <td>Visual features</td>
+</tr>
+-->
+
+<!-- <tr>
+  <td>Books</td>
+  <td><a href="amazon_readme.txt">reviews</a> (22,507,155 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (2,370,585 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Electronics</td>
+  <td><a href="amazon_readme.txt">reviews</a> (7,824,482 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (498,196 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Movies and TV</td>
+  <td><a href="amazon_readme.txt">reviews</a> (4,607,047 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (208,321 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>CDs and Vinyl</td>
+  <td><a href="amazon_readme.txt">reviews</a> (3,749,004 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (492,799 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Clothing, Shoes and Jewelry</td>
+  <td><a href="amazon_readme.txt">reviews</a> (5,748,920 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (1,503,384 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Home and Kitchen</td>
+  <td><a href="amazon_readme.txt">reviews</a> (4,253,926 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (436,988 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Kindle Store</td>
+  <td><a href="amazon_readme.txt">reviews</a> (3,205,467 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (434,702 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Sports and Outdoors</td>
+  <td><a href="amazon_readme.txt">reviews</a> (3,268,695 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (532,197 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Cell Phones and Accessories</td>
+  <td><a href="amazon_readme.txt">reviews</a> (3,447,249 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (346,793 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Health and Personal Care</td>
+  <td><a href="amazon_readme.txt">reviews</a> (2,982,326 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (263,032 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Toys and Games</td>
+  <td><a href="amazon_readme.txt">reviews</a> (2,252,771 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (336,072 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Video Games</td>
+  <td><a href="amazon_readme.txt">reviews</a> (1,324,753 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (50,953 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Tools and Home Improvement</td>
+  <td><a href="amazon_readme.txt">reviews</a> (1,926,047 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (269,120 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Beauty</td>
+  <td><a href="amazon_readme.txt">reviews</a> (2,023,070 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (259,204 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Apps for Android</td>
+  <td><a href="amazon_readme.txt">reviews</a> (2,638,173 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (61,551 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Office Products</td>
+  <td><a href="amazon_readme.txt">reviews</a> (1,243,186 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (134,838 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Pet Supplies</td>
+  <td><a href="amazon_readme.txt">reviews</a> (1,235,316 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (110,707 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Automotive</td>
+  <td><a href="amazon_readme.txt">reviews</a> (1,373,768 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (331,090 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Grocery and Gourmet Food</td>
+  <td><a href="amazon_readme.txt">reviews</a> (1,297,156 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (171,760 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Patio, Lawn and Garden</td>
+  <td><a href="amazon_readme.txt">reviews</a> (993,490 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (109,094 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Baby</td>
+  <td><a href="amazon_readme.txt">reviews</a> (915,446 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (71,317 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Digital Music</td>
+  <td><a href="amazon_readme.txt">reviews</a> (836,006 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (279,899 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Musical Instruments</td>
+  <td><a href="amazon_readme.txt">reviews</a> (500,176 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (84,901 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+
+<tr>
+  <td>Amazon Instant Video</td>
+  <td><a href="amazon_readme.txt">reviews</a> (583,933 reviews)</td>
+  <td><a href="amazon_readme.txt">metadata</a> (30,648 products)</td>
+  <td><a href="amazon_readme.txt">image features</a></td>
+</tr>
+</table>
+</p> --> 
+
+
+
+<a name="code"></a>
+<h2>Code</h2>
+
+<h3>Reading the data</h3>
+
+<p>Data can be treated as python dictionary objects. A simple script to read any of the above the data is as follows:</p>
+
+<p>
+<div class="code">def parse(path):
+  g = gzip.open(path, 'r')
+  for l in g:
+    yield json.loads(l)
+</div>
+</p>
+
+<!-- <h3>Convert to 'strict' json</h3>
+
+<p>The above data can be read with python 'eval', but is not strict json. If you'd like to use some language other than python, you can convert the data to strict json as follows:</p>
+
+<p>
+<div class="code">import json
+import gzip
+
+def parse(path):
+  g = gzip.open(path, 'r')
+  for l in g:
+    yield json.dumps(eval(l))
+
+f = open("output.strict", 'w')
+for l in parse("reviews_Video_Games.json.gz"):
+  f.write(l + '\n')
+</div>
+</p> -->
+
+<h3>Pandas data frame</h3>
+
+<p>This code reads the data into a pandas data frame:</p>
+
+<p>
+<div class="code">import pandas as pd
+import gzip
+
+def parse(path):
+  g = gzip.open(path, 'rb')
+  for l in g:
+    yield json.loads(l)
+
+def getDF(path):
+  i = 0
+  df = {}
+  for d in parse(path):
+    df[i] = d
+    i += 1
+  return pd.DataFrame.from_dict(df, orient='index')
+
+df = getDF('reviews_Video_Games.json.gz')
+</div>
+</p>
+
+<!--
+<h3>Convert to CSV</h3>
+
+<p>This code converts (a selection of fields from) the above files to CSV format:</p>
+
+<p>
+<div class="code">import csv
+
+fields = ["asin", "description", "brand"]
+
+csvOut = gzip.open("meta_Video_Games.csv.gz", 'w')
+writer = csv.writer(csvOut)
+
+for product in parse("meta_Video_Games.json.gz"):
+  line = []
+  for f in fields:
+    if product.has_key(f): line.append(product[f])
+    else: line.append("")
+  writer.writerow(line)
+</div>
+</p>
+-->
+
+<!-- <h3>Read image features</h3>
+
+<p>
+<div class="code">import array
+
+def readImageFeatures(path):
+  f = open(path, 'rb')
+  while True:
+    asin = f.read(10)
+    if asin == '': break
+    a = array.array('f')
+    a.fromfile(f, 4096)
+    yield asin, a.tolist()
+</div>
+</p> -->
+
+<h3>Example: compute average rating</h3>
+<p>
+<div class="code">ratings = []
+
+for review in parse("reviews_Video_Games.json.gz"):
+  ratings.append(review['overall'])
+
+print sum(ratings) / len(ratings)
+</div>
+</p>
+
+<h3>Example: latent-factor model in <a href="http://www.mymedialite.net/">mymedialite</a></h3>
+
+<p>Predicts ratings from a rating-only CSV file</p>
+
+<p>
+<div class="code">./rating_prediction --recommender=BiasedMatrixFactorization --training-file=ratings_Video_Games.csv --test-ratio=0.1
+</div>
+</p>
+
+</div>
+
+
+
+<div hidden>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=NhRs0vCCGWHg2FizXLAthPcEcwmf_mYfPcdnhDwzyC0&cl=ffffff&w=a"></script>
+</div>
+
+
+
+
+<script type="text/javascript">
+if (typeof jQuery != 'undefined') {
+  jQuery(document).ready(function($) {
+    var filetypes = /\.(zip|exe|pdf|doc*|xls*|ppt*|mp3)$/i;
+    var baseHref = '';
+    if (jQuery('base').attr('href') != undefined)
+      baseHref = jQuery('base').attr('href');
+    jQuery('a').each(function() {
+      var href = jQuery(this).attr('href');
+      if (href && (href.match(/^https?\:/i)) && (!href.match(document.domain))) {
+        jQuery(this).click(function() {
+          var extLink = href.replace(/^https?\:\/\//i, '');
+          _gaq.push(['_trackEvent', 'External', 'Click', extLink]);
+          if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+            setTimeout(function() { location.href = href; }, 200);
+            return false;
+          }
+        });
+      }
+      else if (href && href.match(/^mailto\:/i)) {
+        jQuery(this).click(function() {
+          var mailLink = href.replace(/^mailto\:/i, '');
+          _gaq.push(['_trackEvent', 'Email', 'Click', mailLink]);
+        });
+      }
+      else if (href && href.match(filetypes)) {
+        jQuery(this).click(function() {
+          var extension = (/[.]/.exec(href)) ? /[^.]+$/.exec(href) : undefined;
+          var filePath = href;
+          _gaq.push(['_trackEvent', 'Download', 'Click-' + extension, filePath]);
+          if (jQuery(this).attr('target') != undefined && jQuery(this).attr('target').toLowerCase() != '_blank') {
+            setTimeout(function() { location.href = baseHref + href; }, 200);
+            return false;
+          }
+        });
+      }
+    });
+  });
+}
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23010657-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>
+
+
