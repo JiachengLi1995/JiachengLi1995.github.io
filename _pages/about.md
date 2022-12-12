@@ -11,6 +11,10 @@ redirect_from:
 I'm a Ph.D. candidate advised by Prof. Julian McAuley and Prof. Jingbo Shang at UC San Diego.
 <br/> My research interests include natural language processing and recommender systems.
 
+News
+======
+* [Google Local dataset (2021)](https://jiachengli1995.github.io/google/index.html) is released! It contains about 666 million reviews and 5 million businesses from Google map.
+
 Publications
 ======
 **PrimeNet: Pre-training for Irregular Multivariate Time Series.**
