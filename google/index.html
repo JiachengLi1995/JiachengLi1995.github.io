@@ -10,7 +10,7 @@
     {"@context":"http://schema.org/",
      "@type":"Dataset",
      "name":"Google Local review data 2018",
-     "description":"## Context\n\nThis Dataset contains review information on Google map (ratings, text, images, etc.), business metadata (address, geographical info, descriptions, category information, price, open hours, and MISC info), and links (relative businesses). The total number of reviews is 233.1 million.\n\n- New reviews: \n\n    - Current data includes reviews in the range May 1996 - Oct 2018.\n\n- Metadata:     - We have added transaction metadata for each review shown on the review page. \n\n    - Added more detailed metadata of the product landing page.\n\n\n## Acknowledgements\n\nIf you publish articles based on this dataset, please cite the following paper:\n\n- Jianmo Ni, Jiacheng Li, Julian McAuley. Justifying recommendations using distantly-labeled reviews and fined-grained aspects. EMNLP, 2019.",
+     "description":"## Context\n\nThis Dataset contains review information on Google map (ratings, text, images, etc.), business metadata (address, geographical info, descriptions, category information, price, open hours, and MISC info), and links (relative businesses) in the United States. The dataset includes 666.3 million reviews, 113.6 million users and 4.9 million businesses util Sep 2021.",
      "url":"https://jiachengli1995.github.io/google/index.html",
      "sameAs":"","version":2,
      "creator":{"@type":"Organization","name":"UCSD CSE Research Project","url":"https://jiachengli1995.github.io/google/index.html"}}
@@ -37,90 +37,40 @@
 <div id="main">
 <!-- <div id="header"> -->
   <h1>Google Local Data (2021)</h1>
-
+  
+  <p><b><a href="https://www.linkedin.com/in/tianyang-zhang-sky/">Tianyang Zhang</a></b>, UCSD</p>
   <p><b><a href="https://jiachengli1995.github.io/">Jiacheng Li</a></b>, UCSD</p>
-  <p><b><a href="https://www.linkedin.com/in/tianyang-zhang-sky/">Tianyang Zhang</a></b>, Google</p>
-
 
 <h2>Description</h2>
 
-<p>This Dataset is an updated version of the <a href="http://jmcauley.ucsd.edu/data/amazon/index_2014.html">Amazon review dataset</a> released in 2014. As in the previous version, this dataset includes reviews (ratings, text, helpfulness votes), product metadata (descriptions, category information, price, brand, and image features), and links (also viewed/also bought graphs). In addition, this version provides the following features:
-  <ul>
-    <li>More reviews:
-      <ul>
-        <li>
-          The total number of reviews is 233.1 million (142.8 million in 2014).
-        </li>
-      </ul>
-    </li>
-    <li>Newer reviews:
-      <ul>
-        <li>
-           Current data includes reviews in the range May 1996 - Oct 2018.
-        </li>
-      </ul>
-    </li>
-    <li>Metadata:
-      <ul>
-        <li>We have added transaction metadata for each review shown on the review page. Such information includes:  
-          <ul>
-            <li>Product information, e.g. color (white or black), size (large or small), package type (hardcover or electronics), etc.</li>
-            <li>Product images that are taken after the user received the product.</li>
-          </ul>
-        </li>
-        <li>Added more detailed metadata of the product landing page. Such detailed information includes:
-          <ul>
-            <li>Bullet-point descriptions under product title.</li>
-            <li>Technical details table (attribute-value pairs).</li>
-            <li>Similar products table.</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>More categories:
-      <ul>
-        <li>
-           Includes 5 new product categories.
-        </li>
-      </ul>
-    </li>  
-  </ul>
-</p>
+<p>This Dataset contains review information on Google map (ratings, text, images, etc.), business metadata (address, geographical info, descriptions, category information, price, open hours, and MISC info), and links (relative businesses) util Sep 2021 in the United States.</p>
 
-<p><b>You can also download the review data from our previous datasets.</b></p>
-<p><a href="http://jmcauley.ucsd.edu/data/amazon/links.html">Amazon review (2014)</a></p>
-<p><a href="http://snap.stanford.edu/data/web-Amazon-links.html">Amazon review (2013)</a></p>
-
+<table class="code-table">
+  <tr> <td>Reviews:</td> <td>666,324,103</td> </tr>
+  <tr> <td>Users:</td> <td>113,643,107</td> </tr>
+  <tr> <td>Businesses:</td> <td>4,963,111</td> </tr>
+</table>
 
 <h2>Citation</h2>
-<p>Please cite the following paper if you use the data in any way:</p>
+<p>Please cite the following papers if you use the data in any way:</p>
 <p>
-  <b>Justifying recommendations using distantly-labeled reviews and fined-grained aspects</b><br>
-  Jianmo Ni, Jiacheng Li, Julian McAuley<br>
-  <em>Empirical Methods in Natural Language Processing (EMNLP)</em>, 2019<br>
-  <a href="http://cseweb.ucsd.edu/~jmcauley/pdfs/emnlp19a.pdf">pdf</a>
+  <b>UCTopic: Unsupervised Contrastive Learning for Phrase Representations and Topic Mining</b><br>
+  Jiacheng Li, Jingbo Shang, Julian McAuley<br>
+  <em>Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2022<br>
+  <a href="https://aclanthology.org/2022.acl-long.426.pdf">pdf</a>
+</p>
+<br>
+<p>
+  <b>Personalized Showcases: Generating Multi-Modal Explanations for Recommendations</b><br>
+  An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian Mcauley<br>
+  <em>arXiv:2207.00422</em>, 2022<br>
+  <a href="https://arxiv.org/pdf/2207.00422.pdf">pdf</a>
 </p>
 
-<h2>News</h2>
-<p>05/2021 We updated <b>high resolution image urls</b> to the metadata! </p>
-<p>08/2020 We have updated the metadata and now it includes much less HTML/CSS code. Feel free to download the updated data! </p>
+<h2>Contact</h2>
+<p>Jiacheng Li (j9li@eng.ucsd.edu)</p>
 
-<h2>Note</h2>
-<p>We provide a <a href="https://colab.research.google.com/drive/1Zv6MARGQcrBbLHyjPVVMZVnRWsRnVMpV">colab notebook</a> that helps you parse and clean the data. For example:
-	<ul>
-		<li>Load the metadata (e.g. as JSON or DataFrame)</li>
-		<li>Check if title has HTML contents and filter them</li>
-	</ul>
-</p>
-<p>We provide a <a href="https://colab.research.google.com/drive/12r4KJVbNqjjhiZ6aeiaG809x4-Tg5fm8?usp=sharing">colab notebook</a> that helps you find target products and obtain their reviews!
-</p>
-<p><b>We appreciate any help or feedback to improve the quality of our dataset! Feel free to reach us at jin018@ucsd.edu if you meet any following questions:</b>
-	<ul>
-		<li>Unparsed HTML contents</li>
-		<li>Duplicate items which have same reviews</li>
-	</ul>
-</p>
-
+<br><hr>
 
 <h2>Directory</h2>
 
@@ -155,368 +105,320 @@
 
 <p>Please only download these (large!) files if you really need them. We recommend using the smaller datasets (i.e. k-core and CSV files) as shown in the <a href="#subsets">next section</a>.</p> 
 
-<p><b>raw review data</b> (34gb) - all 233.1 million reviews</p>
-
-<!-- <p><b><a href="amazon_readme.txt">user review data</a></b> (18gb) - duplicate items removed (83.68 million reviews), sorted by user</p>
-<p><b><a href="amazon_readme.txt">product review data</a></b> (18gb) - duplicate items removed, sorted by product</p> -->
-
-<p><b>ratings only</b> (6.7gb) - same as above, in csv form without reviews or metadata</b>
-<p><b>5-core</b> (14.3gb) - subset of the data in which all users and items have at least 5 reviews (75.26 million reviews)</p>
-
-<!-- <p>Finally, the following file removes duplicates more aggressively, removing duplicates even if they are written by different users. This accounts for users with multiple accounts or plagiarized reviews. Such duplicates account for less than 1 percent of reviews, though this dataset is probably preferable for sentiment analysis type tasks:</p>
-
-<p><b>aggressively deduplicated data</b> (18gb) - no duplicates whatsoever (82.83 million reviews)</p> -->
-
-<p><b>Per-category data</b> - the review and product metadata for each category.</p>
-<p>To download the complete review data and the per-category files, the following links will direct you to enter a form. Please <a href = "mailto: abc@example.com">contact me</a> if you can't get access to the form.</p>
+<p>To download the complete review data and the per-category files, the following links will direct you to enter a form. Please contact me if you can't get access to the form.</p>
 <p>
 <table class="code-table" style="font-size: 0.7em; width:90%">
 <tr> 
-      <td>Amazon Fashion</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (883,636 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (186,637 products)</td> 
+      <td>Alabama</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (8,967,499 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (74,967 businesses)</td> 
     </tr>
 
 <tr> 
-      <td>All Beauty</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (371,345 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (32,992 products)</td> 
+      <td>Alaska</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,051,246 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (12,774 businesses)</td> 
     </tr>
 
 <tr> 
-      <td>Appliances</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (602,777 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (30,459 products)</td> 
+      <td>Arizona</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (18,375,050 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (108,579 businesses)</td> 
     </tr>
 
 <tr> 
-      <td>Arts, Crafts and Sewing</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (2,875,917 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (303,426 products)</td> 
+      <td>Arkansas</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (5,106,056 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (47,246 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Automotive</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (7,990,166 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (932,019 products)</td> 
+    <tr> 
+      <td>California</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (70,529,977 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (515,961 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Books</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (51,311,621 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (2,935,525 products)</td> 
+    <tr> 
+      <td>Colorado</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (15,681,222 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (106,829 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>CDs and Vinyl</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (4,543,369 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (544,442 products)</td> 
+    <tr> 
+      <td>Connecticut</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (5,181,800 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (49,200 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Cell Phones and Accessories</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (10,063,255 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (590,269 products)</td> 
+    <tr> 
+      <td>Delaware</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,885,948 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (14,706 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Clothing Shoes and Jewelry</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (32,292,099 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (2,685,059 products)</td> 
+    <tr> 
+      <td>District of Columbia</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,894,317 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (11,060 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Digital Music</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (1,584,082 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (465,392 products)</td> 
+    <tr> 
+      <td>Florida</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (61,803,524 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (378,020 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Electronics</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (20,994,353 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (786,868 products)</td> 
+    <tr> 
+      <td>Georgia</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (24,060,125 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (166,381 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Gift Cards</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (147,194 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (1,548 products)</td> 
+    <tr> 
+      <td>Hawaii</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (3,111,531 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (21,507 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Grocery and Gourmet Food</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,074,160 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (287,209 products)</td> 
+    <tr> 
+      <td>Idaho</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (3,892,636 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (33,214 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Home and Kitchen</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (21,928,568 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (1,301,225 products)</td> 
+    <tr> 
+      <td>Illinois</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (23,096,838 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (179,205 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Industrial and Scientific</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (1,758,333 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (167,524 products)</td> 
+    <tr> 
+      <td>Indiana</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (12,865,167 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (100,391 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Kindle Store</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,722,988 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (493,859 products)</td> 
+    <tr> 
+      <td>Iowa</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (4,838,887 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (47,794 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Luxury Beauty</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (574,628 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (12,308 products)</td> 
+    <tr> 
+      <td>Kansas</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (5,546,880 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (46,286 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Magazine Subscriptions</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (89,689 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (3,493 products)</td> 
+    <tr> 
+      <td>Kentucky</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (7,654,993 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (63,193 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Movies and TV</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (8,765,568 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (203,970 products)</td> 
+    <tr> 
+      <td>Louisiana</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (7,536,078 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (63,315 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Musical Instruments</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (1,512,530 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (120,400 products)</td> 
+    <tr> 
+      <td>Maine</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (2,214,773 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (24,853 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Office Products</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,581,313 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (315,644 products)</td> 
+    <tr> 
+      <td>Maryland</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (10,728,483 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (78,144 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Patio, Lawn and Garden</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (5,236,058 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (279,697 products)</td> 
+    <tr> 
+      <td>Massachusetts</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (10,447,007 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (92,520 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Pet Supplies</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (6,542,483 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (206,141 products)</td> 
+    <tr> 
+      <td>Michigan</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (20,776,155 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (158,819 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Prime Pantry</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (471,614 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (10,815 products)</td> 
+    <tr> 
+      <td>Minnesota</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (9,520,258 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (80,964 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Software</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (459,436 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (26,815 products)</td> 
+    <tr> 
+      <td>Mississippi</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (3,861,771 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (37,147 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Sports and Outdoors</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (12,980,837 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (962,876 products)</td> 
+    <tr> 
+      <td>Missouri</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (13,416,511 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (99,569 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Tools and Home Improvement</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (9,015,203 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (571,982 products)</td> 
+    <tr> 
+      <td>Montana</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,933,939 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (21,680 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Toys and Games</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (8,201,231 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (634,414 products)</td> 
+    <tr> 
+      <td>Nebraska</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (3,286,810 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (30,016 businesses)</td> 
+    </tr>
+    
+    <tr> 
+      <td>Nevada</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (8,833,403 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (48,237 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Video Games</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">reviews</a> (2,565,349 reviews)</td> 
-      <td><a href="https://forms.gle/UEkkJs69e7Z5A5Ps9">metadata</a> (84,893 products)</td> 
-    </tr>
-<!-- <tr> 
-      <td>Amazon Fashion</td> 
-      <td><a href="readme.txt">reviews</a> (883,636 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (186,637 products)</td> 
+    <tr> 
+      <td>New Hampshire</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (2,648,081 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (24,767 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>All Beauty</td> 
-      <td><a href="readme.txt">reviews</a> (371,345 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (32,992 products)</td> 
+    <tr> 
+      <td>New Jersey</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (15,720,266 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (127,276 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Appliances</td> 
-      <td><a href="readme.txt">reviews</a> (602,777 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (30,459 products)</td> 
+    <tr> 
+      <td>New Mexico</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (4,705,389 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (34,703 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Arts, Crafts and Sewing</td> 
-      <td><a href="readme.txt">reviews</a> (2,875,917 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (303,426 products)</td> 
+    <tr> 
+      <td>New York</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (33,459,761 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (272,189 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Automotive</td> 
-      <td><a href="readme.txt">reviews</a> (7,990,166 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (932,019 products)</td> 
+    <tr> 
+      <td>North Carolina</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (22,299,136 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (166,235 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Books</td> 
-      <td><a href="readme.txt">reviews</a> (51,311,621 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (2,935,525 products)</td> 
+    <tr> 
+      <td>North Dakota</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,109,558 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (11,987 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>CDs and Vinyl</td> 
-      <td><a href="readme.txt">reviews</a> (4,543,369 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (544,442 products)</td> 
+    <tr> 
+      <td>Ohio</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (23,039,365 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (173,761 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Cell Phones and Accessories</td> 
-      <td><a href="readme.txt">reviews</a> (10,063,255 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (590,269 products)</td> 
+    <tr> 
+      <td>Oklahoma</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (8,482,820 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (68,102 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Clothing, Shoes and Jewelry</td> 
-      <td><a href="readme.txt">reviews</a> (32,292,099 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (2,685,059 products)</td> 
+    <tr> 
+      <td>Oregon</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (11,012,170 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (93,476 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Digital Music</td> 
-      <td><a href="readme.txt">reviews</a> (1,584,082 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (465,392 products)</td> 
+    <tr> 
+      <td>Pennsylvania</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (21,944,802 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (190,816 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Electronics</td> 
-      <td><a href="readme.txt">reviews</a> (20,994,353 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (786,868 products)</td> 
+    <tr> 
+      <td>Rhode Island</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,777,094 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (15,941 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Gift Cards</td> 
-      <td><a href="readme.txt">reviews</a> (147,194 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (1,548 products)</td> 
+    <tr> 
+      <td>South Carolina</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (11,995,482 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (84,929 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Grocery and Gourmet Food</td> 
-      <td><a href="readme.txt">reviews</a> (5,074,160 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (287,209 products)</td> 
+    <tr> 
+      <td>South Dakota</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,452,599 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (14,257 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Home and Kitchen</td> 
-      <td><a href="readme.txt">reviews</a> (21,928,568 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (1,301,225 products)</td> 
+    <tr> 
+      <td>Tennessee</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (15,951,213 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (111,395 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Industrial and Scientific</td> 
-      <td><a href="readme.txt">reviews</a> (1,758,333 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (167,524 products)</td> 
+    <tr> 
+      <td>Texas</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (66,435,184 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (447,314 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Kindle Store</td> 
-      <td><a href="readme.txt">reviews</a> (5,722,988 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (493,859 products)</td> 
+    <tr> 
+      <td>Utah</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (9,081,167 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (58,797 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Luxury Beauty</td> 
-      <td><a href="readme.txt">reviews</a> (574,628 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (12,308 products)</td> 
+    <tr> 
+      <td>Vermont</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (852,203 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (11,291 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Magazine Subscriptions</td> 
-      <td><a href="readme.txt">reviews</a> (89,689 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (3,493 products)</td> 
+    <tr> 
+      <td>Virginia</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (15,957,938 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (119,673 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Movies and TV</td> 
-      <td><a href="readme.txt">reviews</a> (8,765,568 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (203,970 products)</td> 
+    <tr> 
+      <td>Washington</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (16,541,734 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (121,304 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Musical Instruments</td> 
-      <td><a href="readme.txt">reviews</a> (1,512,530 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (120,400 products)</td> 
+    <tr> 
+      <td>West Virginia</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (2,208,199 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (23,541 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Office Products</td> 
-      <td><a href="readme.txt">reviews</a> (5,581,313 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (315,644 products)</td> 
+    <tr> 
+      <td>Wisconsin</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (10,246,685 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (92,041 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Patio, Lawn and Garden</td> 
-      <td><a href="readme.txt">reviews</a> (5,236,058 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (279,697 products)</td> 
+    <tr> 
+      <td>Wyoming</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (1,141,421 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (12,088 businesses)</td> 
     </tr>
 
-<tr> 
-      <td>Pet Supplies</td> 
-      <td><a href="readme.txt">reviews</a> (6,542,483 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (206,141 products)</td> 
+    <tr> 
+      <td>Other</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">reviews</a> (162,952 reviews)</td> 
+      <td><a href="https://forms.gle/dWKyikC34GqwkbV3A">metadata</a> (1,224 businesses)</td> 
     </tr>
-
-<tr> 
-      <td>Prime Pantry</td> 
-      <td><a href="readme.txt">reviews</a> (471,614 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (10,815 products)</td> 
-    </tr>
-
-<tr> 
-      <td>Software</td> 
-      <td><a href="readme.txt">reviews</a> (459,436 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (26,815 products)</td> 
-    </tr>
-
-<tr> 
-      <td>Sports and Outdoors</td> 
-      <td><a href="readme.txt">reviews</a> (12,980,837 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (962,876 products)</td> 
-    </tr>
-
-<tr> 
-      <td>Tools and Home Improvement</td> 
-      <td><a href="readme.txt">reviews</a> (9,015,203 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (571,982 products)</td> 
-    </tr>
-
-<tr> 
-      <td>Toys and Games</td> 
-      <td><a href="readme.txt">reviews</a> (8,201,231 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (634,414 products)</td> 
-    </tr>
-
-<tr> 
-      <td>Video Games</td> 
-      <td><a href="readme.txt">reviews</a> (2,565,349 reviews)</td> 
-      <td><a href="readme.txt">metadata</a> (84,893 products)</td> 
-    </tr> -->
 </table>
 </p>
 
@@ -528,185 +430,315 @@
 
 <p><b>K-cores</b> (i.e., dense subsets): These data have been reduced to extract the <a href="https://en.wikipedia.org/wiki/Degeneracy_(graph_theory)">k-core</a>, such that each of the remaining users and items have k reviews each.</p>
 
-<p><b>Ratings only:</b> These datasets include no metadata or reviews, but only (item,user,rating,timestamp) tuples. Thus they are suitable for use with <a href="http://www.mymedialite.net/">mymedialite</a> (or similar) packages.</p>
+<p><b>Ratings only:</b> These datasets include no metadata or reviews, but only (business,user,rating,timestamp) tuples. Thus they are suitable for use with <a href="http://www.mymedialite.net/">mymedialite</a> (or similar) packages.</p>
 <p>You can directly download the following smaller per-category datasets.</p>
 <p>
 <table class="code-table" style="font-size: 0.7em; width:90%">
-
-<tr> 
-      <td>Amazon Fashion</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/AMAZON_FASHION_5.json.gz">5-core</a> (3,176 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/AMAZON_FASHION.csv">ratings only</a> (883,636 ratings)</td> 
+    <tr> 
+      <td>Alabama</td> 
+      <td><a href="https://drive.google.com/file/d/1ptty-apkXwINBcnoxNakpRbusyXInyav/view?usp=share_link">10-core</a> (5,146,330 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/13I3tw8NrmzreE6Jl3M25lIQqMKkHXPfp/view?usp=share_link">ratings only</a> (8,967,499 ratings)</td> 
     </tr>
 
 <tr> 
-      <td>All Beauty</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/All_Beauty_5.json.gz">5-core</a> (5,269 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/All_Beauty.csv">ratings only</a> (371,345 ratings)</td> 
+      <td>Alaska</td> 
+      <td><a href="https://drive.google.com/file/d/1WIR-CFU58w_jVRNcWlO7h_IBQc3Uqv1i/view?usp=share_link">10-core</a> (521,515 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1TIHlxcb61tDvXg9mtOaypQIPCTeFW0dH/view?usp=share_link">ratings only</a> (1,051,246 ratings)</td> 
     </tr>
 
 <tr> 
-      <td>Appliances</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Appliances_5.json.gz">5-core</a> (2,277 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Appliances.csv">ratings only</a> (602,777 ratings)</td> 
+      <td>Arizona</td> 
+      <td><a href="https://drive.google.com/file/d/11AU2k95gOjTt5TCh2ud3uQDJyadtEexf/view?usp=share_link">10-core</a> (10,764,435 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/12MGA2NHzMdnoqjBXLFranLoWSH0GapEl/view?usp=share_link">ratings only</a> (18,375,050 ratings)</td> 
     </tr>
 
 <tr> 
-      <td>Arts, Crafts and Sewing</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Arts_Crafts_and_Sewing_5.json.gz">5-core</a> (494,485 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Arts_Crafts_and_Sewing.csv">ratings only</a> (2,875,917 ratings)</td> 
+      <td>Arkansas</td> 
+      <td><a href="https://drive.google.com/file/d/1-p_-QryQ4y4nL_jBhWukRHvDGc9bXLnK/view?usp=share_link">10-core</a> (2,855,468 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1U165iKJdGcbEuEZJ06jkp9Wzx9J6ZhZ4/view?usp=share_link">ratings only</a> (5,106,056 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Automotive</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Automotive_5.json.gz">5-core</a> (1,711,519 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Automotive.csv">ratings only</a> (7,990,166 ratings)</td> 
+    <tr> 
+      <td>California</td> 
+      <td><a href="https://drive.google.com/file/d/118_K7IjlP-_e6ignazg3ujL7cETWxLIw/view?usp=share_link">10-core</a> (44,476,890 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1SL-qdVIjES2pmxKQL27qb70bLtgsQZn9/view?usp=share_link">ratings only</a> (70,529,977 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Books</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Books_5.json.gz">5-core</a> (27,164,983 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Books.csv">ratings only</a> (51,311,621 ratings)</td> 
+    <tr> 
+      <td>Colorado</td> 
+      <td><a href="https://drive.google.com/file/d/1beu7NWwjgtHtbVe2C3guMQCv2YfUmqyC/view?usp=share_link">10-core</a> (8,738,271 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/103X99JJz_OfjQlKwATs5eTqWGmgyAQLF/view?usp=share_link">ratings only</a> (15,681,222 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>CDs and Vinyl</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/CDs_and_Vinyl_5.json.gz">5-core</a> (1,443,755 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/CDs_and_Vinyl.csv">ratings only</a> (4,543,369 ratings)</td> 
+    <tr> 
+      <td>Connecticut</td> 
+      <td><a href="https://drive.google.com/file/d/1glc1w1qzMliJ4Equ5yDK3Bwtk2-GWJcr/view?usp=share_link">10-core</a> (2,680,107 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1OixVwkNDBsnOsi89M4ebVIaq2gMvJUos/view?usp=share_link">ratings only</a> (5,181,800 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Cell Phones and Accessories</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Cell_Phones_and_Accessories_5.json.gz">5-core</a> (1,128,437 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Cell_Phones_and_Accessories.csv">ratings only</a> (10,063,255 ratings)</td> 
+    <tr> 
+      <td>Delaware</td> 
+      <td><a href="https://drive.google.com/file/d/1LP5LeBXw73EjenUOcYeT8ntzv7284wtq/view?usp=share_link">10-core</a> (905,537 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1IiEmtHmi4TNwYHbIdBIrZLCCJJu0lzhL/view?usp=share_link">ratings only</a> (1,885,948 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Clothing, Shoes and Jewelry</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Clothing_Shoes_and_Jewelry_5.json.gz">5-core</a> (11,285,464 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Clothing_Shoes_and_Jewelry.csv">ratings only</a> (32,292,099 ratings)</td> 
+    <tr> 
+      <td>District of Columbia</td> 
+      <td><a href="https://drive.google.com/file/d/1B3k0ckU2SuYjkMYZDEgDcCzJGjVbiC4l/view?usp=share_link">10-core</a> (564,783 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1k6F6-UE-o1dxbcYR1X4gBEvKas4VFg2W/view?usp=share_link">ratings only</a> (1,894,317 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Digital Music</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Digital_Music_5.json.gz">5-core</a> (169,781 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Digital_Music.csv">ratings only</a> (1,584,082 ratings)</td> 
+    <tr> 
+      <td>Florida</td> 
+      <td><a href="https://drive.google.com/file/d/1fCvVp0-MG99krLBkmIRTDpISxuftMzS8/view?usp=share_link">10-core</a> (35,457,319 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1xIHyqEWmT37mgYYPQBO6EUoNGq03NbR4/view?usp=share_link">ratings only</a> (61,803,524 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Electronics</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Electronics_5.json.gz">5-core</a> (6,739,590 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Electronics.csv">ratings only</a> (20,994,353 ratings)</td> 
+    <tr> 
+      <td>Georgia</td> 
+      <td><a href="https://drive.google.com/file/d/1bA3QcVTYFNArFohXDQYV2kWPapzhj_NV/view?usp=share_link">10-core</a> (13,599,687 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1u17ZSpyJvE4sdAcGv-jn-tH1uP_laslf/view?usp=share_link">ratings only</a> (24,060,125 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Gift Cards</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Gift_Cards_5.json.gz">5-core</a> (2,972 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Gift_Cards.csv">ratings only</a> (147,194 ratings)</td> 
+    <tr> 
+      <td>Hawaii</td> 
+      <td><a href="https://drive.google.com/file/d/1XH4R8Fb6iiGs6ouN-Ifd3uqoSCYm_Z8q/view?usp=share_link">10-core</a> (1,504,347 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1-_su0hr4JZaqZwHgZ2OJP0tqyfootVVp/view?usp=share_link">ratings only</a> (3,111,531 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Grocery and Gourmet Food</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Grocery_and_Gourmet_Food_5.json.gz">5-core</a> (1,143,860 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Grocery_and_Gourmet_Food.csv">ratings only</a> (5,074,160 ratings)</td> 
+    <tr> 
+      <td>Idaho</td> 
+      <td><a href="https://drive.google.com/file/d/1nTSWoZ58ZMSaWU2enjEsEIFYm--ScLnV/view?usp=share_link">10-core</a> (2,085,487 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1KJSmlap_w28Y9B8vT5Wn8EgsJSLXQefg/view?usp=share_link">ratings only</a> (3,892,636 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Home and Kitchen</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Home_and_Kitchen_5.json.gz">5-core</a> (6,898,955 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Home_and_Kitchen.csv">ratings only</a> (21,928,568 ratings)</td> 
+    <tr> 
+      <td>Illinois</td> 
+      <td><a href="https://drive.google.com/file/d/1PRL6f2XqlDLQjT3w1dN6hU-r1SQa9phP/view?usp=share_link">10-core</a> (13,237,848 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/13BeY-Z3-XbeZImJ_4MoQbyskeqT9DMI5/view?usp=share_link">ratings only</a> (23,096,838 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Industrial and Scientific</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Industrial_and_Scientific_5.json.gz">5-core</a> (77,071 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Industrial_and_Scientific.csv">ratings only</a> (1,758,333 ratings)</td> 
+    <tr> 
+      <td>Indiana</td> 
+      <td><a href="https://drive.google.com/file/d/1pPrHJgjeC-wKQm7-gWZE-Hay1XpSzNOB/view?usp=share_link">10-core</a> (7,638,803 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1KYOM_sGPmyuywa6seVivaoNnaW7V-w-h/view?usp=share_link">ratings only</a> (12,865,167 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Kindle Store</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Kindle_Store_5.json.gz">5-core</a> (2,222,983 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Kindle_Store.csv">ratings only</a> (5,722,988 ratings)</td> 
+    <tr> 
+      <td>Iowa</td> 
+      <td><a href="https://drive.google.com/file/d/11Q2lX34dx_nE4QifhJwheG5wFnqSN09g/view?usp=share_link">10-core</a> (2,677,684 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1ypCKleUeBP6Xjz3uOxl8nb1GPpJarH3E/view?usp=share_link">ratings only</a> (4,838,887 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Luxury Beauty</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Luxury_Beauty_5.json.gz">5-core</a> (34,278 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Luxury_Beauty.csv">ratings only</a> (574,628 ratings)</td> 
+    <tr> 
+      <td>Kansas</td> 
+      <td><a href="https://drive.google.com/file/d/1Ot71jhbk1FnoLcO8E_ZnmJ2-nGifL73s/view?usp=share_link">10-core</a> (3,080,115 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1gux_ke7Ep3DHBoxyLli2OZRgwUzXfJmF/view?usp=share_link">ratings only</a> (5,546,880 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Magazine Subscriptions</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Magazine_Subscriptions_5.json.gz">5-core</a> (2,375 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Magazine_Subscriptions.csv">ratings only</a> (89,689 ratings)</td> 
+    <tr> 
+      <td>Kentucky</td> 
+      <td><a href="https://drive.google.com/file/d/1-ftjwe1NOoietga4PKR3vviLs9rLECa2/view?usp=share_link">10-core</a> (4,240,662 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1S8YiDQ2e6HJnemdndwktnFseb3MjbS2f/view?usp=share_link">ratings only</a> (7,654,993 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Movies and TV</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Movies_and_TV_5.json.gz">5-core</a> (3,410,019 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Movies_and_TV.csv">ratings only</a> (8,765,568 ratings)</td> 
+    <tr> 
+      <td>Louisiana</td> 
+      <td><a href="https://drive.google.com/file/d/1fhdEPWCDLsr-8KBqdWIux-TTAjusWuLN/view?usp=share_link">10-core</a> (3,985,782 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/13MPyp4GloD6OAyiKEsybsGmjfr61aPNq/view?usp=share_link">ratings only</a> (7,536,078 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Musical Instruments</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Musical_Instruments_5.json.gz">5-core</a> (231,392 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Musical_Instruments.csv">ratings only</a> (1,512,530 ratings)</td> 
+    <tr> 
+      <td>Maine</td> 
+      <td><a href="https://drive.google.com/file/d/1colBnS5EinbK7tOQK84WQ6bwSqrvzB3h/view?usp=share_link">10-core</a> (1,123,881 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1OLUfI1kP_gHnEQjEDSJCN9uyQ2CSw77I/view?usp=share_link">ratings only</a> (2,214,773 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Office Products</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Office_Products_5.json.gz">5-core</a> (800,357 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Office_Products.csv">ratings only</a> (5,581,313 ratings)</td> 
+    <tr> 
+      <td>Maryland</td> 
+      <td><a href="https://drive.google.com/file/d/1EnncVDKptba2dUs84Xq54Zl06sjiq3l_/view?usp=share_link">10-core</a> (5,590,890 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1-naMG7XyR0lvZHLc9bfVZlKPKEexhjNE/view?usp=share_link">ratings only</a> (10,728,483 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Patio, Lawn and Garden</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Patio_Lawn_and_Garden_5.json.gz">5-core</a> (798,415 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Patio_Lawn_and_Garden.csv">ratings only</a> (5,236,058 ratings)</td> 
+    <tr> 
+      <td>Massachusetts</td> 
+      <td><a href="https://drive.google.com/file/d/1BlOtDTqHAWwWoVc-wRXSS9YwFjmQ47-6/view?usp=share_link">10-core</a> (5,624,944 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/13tiSFxmWn339Adnxz-gTdmqyAsXD0nbB/view?usp=share_link">ratings only</a> (10,447,007 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Pet Supplies</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Pet_Supplies_5.json.gz">5-core</a> (2,098,325 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Pet_Supplies.csv">ratings only</a> (6,542,483 ratings)</td> 
+    <tr> 
+      <td>Michigan</td> 
+      <td><a href="https://drive.google.com/file/d/1aQJVk4AyUjgPL56ugR6WEhoEUQk-O_Ru/view?usp=share_link">10-core</a> (13,212,364 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1vJ404ANA8HlPROK5BrvmEbUfdukZC3ZY/view?usp=share_link">ratings only</a> (20,776,155 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Prime Pantry</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Prime_Pantry_5.json.gz">5-core</a> (137,788 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Prime_Pantry.csv">ratings only</a> (471,614 ratings)</td> 
+    <tr> 
+      <td>Minnesota</td> 
+      <td><a href="https://drive.google.com/file/d/1L29qPNdkifPtnixuiRGI_qEg7BOkL8U3/view?usp=share_link">10-core</a> (5,646,319 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1NLZWWYQ6F0EEmlS3VLefb8OJA5Owqprq/view?usp=share_link">ratings only</a> (9,520,258 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Software</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Software_5.json.gz">5-core</a> (12,805 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Software.csv">ratings only</a> (459,436 ratings)</td> 
+    <tr> 
+      <td>Mississippi</td> 
+      <td><a href="https://drive.google.com/file/d/1aQmw63AuVO3pccVsf-5fpeMUyak9b68-/view?usp=share_link">10-core</a> (1,971,181 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1TEsMwwHhAZik4ZK0xQXKPRKYYx7hKbCf/view?usp=share_link">ratings only</a> (3,861,771 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Sports and Outdoors</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Sports_and_Outdoors_5.json.gz">5-core</a> (2,839,940 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Sports_and_Outdoors.csv">ratings only</a> (12,980,837 ratings)</td> 
+    <tr> 
+      <td>Missouri</td> 
+      <td><a href="https://drive.google.com/file/d/1Q02jAWREYUWv-LXRQBvqnG83CCBh4xIf/view?usp=share_link">10-core</a> (7,863,559 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1BW5traslzSJJsaTOx9LPgVkLorMELqkp/view?usp=share_link">ratings only</a> (13,416,511 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Tools and Home Improvement</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Tools_and_Home_Improvement_5.json.gz">5-core</a> (2,070,831 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Tools_and_Home_Improvement.csv">ratings only</a> (9,015,203 ratings)</td> 
+    <tr> 
+      <td>Montana</td> 
+      <td><a href="https://drive.google.com/file/d/1u5cl-vHA26da_sY4MiX0lw69DAoXFlYt/view?usp=share_link">10-core</a> (950,370 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1n8Mqt_vHFOZjd-D-YHcr2XhrBF5l8RzB/view?usp=share_link">ratings only</a> (1,933,939 ratings)</td> 
     </tr>
 
-<tr> 
-      <td>Toys and Games</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Toys_and_Games_5.json.gz">5-core</a> (1,828,971 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Toys_and_Games.csv">ratings only</a> (8,201,231 ratings)</td> 
+    <tr> 
+      <td>Nebraska</td> 
+      <td><a href="https://drive.google.com/file/d/1PlxXzVWMi1xycT3ykoxMacgLMApSuLIu/view?usp=share_link">10-core</a> (1,817,866 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1N9OxnZ_QBSQgS3Jow0mQok4EUrf9Fabc/view?usp=share_link">ratings only</a> (3,286,810 ratings)</td>  
+    </tr>
+    
+    <tr> 
+      <td>Nevada</td> 
+      <td><a href="https://drive.google.com/file/d/1LUBUhJOPEJDhdO7feqC2smxmWKn11slo/view?usp=share_link">10-core</a> (4,170,080 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/14oSxDiC8HA0owUDBIbUvZ9-6inWP8UeH/view?usp=share_link">ratings only</a> (8,833,403 ratings)</td>  
     </tr>
 
-<tr> 
-      <td>Video Games</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Video_Games_5.json.gz">5-core</a> (497,577 reviews)</td> 
-      <td><a href="https://jmcauley.ucsd.edu/data/amazon_v2/categoryFilesSmall/Video_Games.csv">ratings only</a> (2,565,349 ratings)</td> 
+    <tr> 
+      <td>New Hampshire</td> 
+      <td><a href="https://drive.google.com/file/d/1TXDQ9PjwHeq6tBDiVx8xjyRHMhON8jqN/view?usp=share_link">10-core</a> (1,296,603 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1vr5hnWGuqP65pGxUCt9HpXBay5IYKUkg/view?usp=share_link">ratings only</a> (2,648,081 ratings)</td> 
     </tr>
 
+    <tr> 
+      <td>New Jersey</td> 
+      <td><a href="https://drive.google.com/file/d/1Yc3-86tngdqTG6bD5isyzHuAkgOwdqCW/view?usp=share_link">10-core</a> (8,227,961 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1SRpwY6LnSHdT1qFOkXiVFxYlQw8Kh8CP/view?usp=share_link">ratings only</a> (15,720,266 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>New Mexico</td> 
+      <td><a href="https://drive.google.com/file/d/14r7_KdvOr7CFi3jW5LEAlpB2zl2pxNzn/view?usp=share_link">10-core</a> (2,571,363 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/119wq7Fp_ZmqlvyixC4AEd1uyJVbLUwFR/view?usp=share_link">ratings only</a> (4,705,389 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>New York</td> 
+      <td><a href="https://drive.google.com/file/d/1u25S2YSDbBwFbZZt_Xj381Q7FPSgIu6c/view?usp=share_link">10-core</a> (18,661,975 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1gIuPaFOsWTEPiCSraH0-1erimzPHJC78/view?usp=share_link">ratings only</a> (33,459,761 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>North Carolina</td> 
+      <td><a href="https://drive.google.com/file/d/1Z-_sezgIbAGCt7AE5dZknfYOuOjTdexm/view?usp=share_link">10-core</a> (12,905,081 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1CqKKsCYoWQlsgSakZfoN2txUgMd0LWW0/view?usp=share_link">ratings only</a> (22,299,136 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>North Dakota</td> 
+      <td><a href="https://drive.google.com/file/d/1eJlLP2Ise2Dmg5dEAz5h6M3lkh6sTU_M/view?usp=share_link">10-core</a> (563,693 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1yS2Yz7npu4cl6vtiTJPwYigVquPSoq4B/view?usp=share_link">ratings only</a> (1,109,558 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>Ohio</td> 
+      <td><a href="https://drive.google.com/file/d/1cVIThpwk7razg1Q-fNATZEFONxUpbtBN/view?usp=share_link">10-core</a> (14,506,563 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1Fs8vpPjrd96BJgnot6pz77HxAqeFNCVF/view?usp=share_link">ratings only</a> (23,039,365 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Oklahoma</td> 
+      <td><a href="https://drive.google.com/file/d/1dpYNTFr4bydsZXOoEqopsyz3Kw-eVIqm/view?usp=share_link">10-core</a> (5,011,462 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1R5HT5ln31ULE_YXHdPHUEK3wfL0DnmKO/view?usp=share_link">ratings only</a> (8,482,820 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Oregon</td> 
+      <td><a href="https://drive.google.com/file/d/13fx9VcxZsetxh2yY-fN-aLJyj2RcwYjh/view?usp=share_link">10-core</a> (6,270,332 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1ieTSVbfBCBf61iB3njeO7icU7l8P_j4X/view?usp=share_link">ratings only</a> (11,012,170 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>Pennsylvania</td> 
+      <td><a href="https://drive.google.com/file/d/1txZ2Yki_6WII9NkDrNVaHdm3FtrSPSLF/view?usp=share_link">10-core</a> (12,772,358 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1r9HN5m72ZAu0rbXh_-73L89yB2VilXPh/view?usp=share_link">ratings only</a> (21,944,802 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>Rhode Island</td> 
+      <td><a href="https://drive.google.com/file/d/17KtKbCIHgXnbiMKsYxV_fCSFVR6hXPPu/view?usp=share_link">10-core</a> (890,006 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1AsOW3Gav-pGvQNqykmLHxbcglUh0CvUo/view?usp=share_link">ratings only</a> (1,777,094 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>South Carolina</td> 
+      <td><a href="https://drive.google.com/file/d/1iu64mC83CLRJclR4RCe0FUzxoxaHlRNT/view?usp=share_link">10-core</a> (6,504,999 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/157Y91P8c1bY7IjJFwcbQdqwvdQfkXvQO/view?usp=share_link">ratings only</a> (11,995,482 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>South Dakota</td> 
+      <td><a href="https://drive.google.com/file/d/1X3ZTwxFXX1xRGLYXpJECQPGYox9mDxYz/view?usp=share_link">10-core</a> (673,048 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/13mv6ccnpMd-E-qKT-26zLOP8UhFgt69h/view?usp=share_link">ratings only</a> (1,452,599 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Tennessee</td> 
+      <td><a href="https://drive.google.com/file/d/1I0GkPaGmsoXEdOmomebVjLpExpOW9r6B/view?usp=share_link">10-core</a> (8,855,714 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1SvaW-Jh93-16jaLYo6aMPa2ooDLDCle0/view?usp=share_link">ratings only</a> (15,951,213 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Texas</td> 
+      <td><a href="https://drive.google.com/file/d/1jdUKOB0ScKwmmFWkE4raUcTSqRokurTa/view?usp=share_link">10-core</a> (40,696,824 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/12TF8j14mGYJVvOE2I6aQoFwTGqQKBB0o/view?usp=share_link">ratings only</a> (66,435,184 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>Utah</td> 
+      <td><a href="https://drive.google.com/file/d/1_0pxL8ZfLGNGJ42ru3JZeCGEsoCt-fOb/view?usp=share_link">10-core</a> (4,933,807 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1eEaTX2yGCDoATUUY_LabusbLcfkef_WV/view?usp=share_link">ratings only</a> (9,081,167 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>Vermont</td> 
+      <td><a href="https://drive.google.com/file/d/1GqssAzsRmOcicsvtNiteUJ0AbeqX13dI/view?usp=share_link">10-core</a> (324,725 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1Sek9-V5E3cBcFoIBjSo0ONaVrYeLoa3m/view?usp=share_link">ratings only</a> (852,203 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>Virginia</td> 
+      <td><a href="https://drive.google.com/file/d/1FQWklJXqTyvfXyAItB-KIS4Wh4i7p6cY/view?usp=share_link">10-core</a> (8,562,059 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1AGNUV4Lb0cAqvHtVx9UaRmq1vUbrIAh_/view?usp=share_link">ratings only</a> (15,957,938 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Washington</td> 
+      <td><a href="https://drive.google.com/file/d/1yRBKyoIl-c6J8N2jKITyIqEXWCiosymF/view?usp=share_link">10-core</a> (10,192,020 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1fgE4ExyVDGah7vTJvVxzWg1Jubs7kq2P/view?usp=share_link">ratings only</a> (16,541,734 ratings)</td>  
+    </tr>
+
+    <tr> 
+      <td>West Virginia</td> 
+      <td><a href="https://drive.google.com/file/d/1kGjtQ8PeVt0PWaUCMdkJNdc1hZD3NWgY/view?usp=share_link">10-core</a> (1,080,333 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1y14ksDfmpUrv7yfGUrfifuvqc3T8R2CF/view?usp=share_link">ratings only</a> (2,208,199 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Wisconsin</td> 
+      <td><a href="https://drive.google.com/file/d/1iEK7Bid0jCRnVXkhpj7gCxSX6ODHtxDZ/view?usp=share_link">10-core</a> (6,036,482 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1T-o3BrKZ5I-QXDAhhvFisqmeBBvLm-CC/view?usp=share_link">ratings only</a> (10,246,685 ratings)</td> 
+    </tr>
+
+    <tr> 
+      <td>Wyoming</td> 
+      <td><a href="https://drive.google.com/file/d/1-hYF6W6OWfZmKMtggmrOX0eUosYBp0jC/view?usp=share_link">10-core</a> (427,808 reviews)</td> 
+      <td><a href="https://drive.google.com/file/d/1LCgzr44ThFfDeLlcoQqfvp71sV7ptRUX/view?usp=share_link">ratings only</a> (1,141,421 ratings)</td>  
+    </tr>
 </table>
 </p>
 
@@ -720,37 +752,45 @@
 
 <p>
 <div class="code">{
-"image": ["https://images-na.ssl-images-amazon.com/images/I/71eG75FTJJL._SY88.jpg"], 
-"overall": 5.0, 
-"vote": "2", 
-"verified": True, 
-"reviewTime": "01 1, 2018", 
-"reviewerID": "AUI6WTTT0QZYS", 
-"asin": "5120053084", 
-"style": {
-	"Size:": "Large", 
-	"Color:": "Charcoal"
-	}, 
-"reviewerName": "Abbey", 
-"reviewText": "I now have 4 of the 5 available colors of this shirt... ", 
-"summary": "Comfy, flattering, discreet--highly recommended!", 
-"unixReviewTime": 1514764800
+  'user_id': '106533466896145407182', 
+  'name': 'Amy VG', 
+  'time': 1568748357166, 
+  'rating': 5, 
+  'text': "I can't say I've ever been excited about a dentist visit before, but there's a first for everything! Loved my experience at Lush today. Every person in the office was friendly and personable- plus the office itself is gorgeous! Great experience, I highly recommend!", 
+  'pics': [
+  {
+    'url': ['https://lh5.googleusercontent.com/p/AF1QipMBzN4BJV9YCObcw_ifNzFPm-u38hO3oimOA8Fb=w150-h150-k-no-p']
+  }, 
+  {
+    'url': ['https://lh5.googleusercontent.com/p/AF1QipNS1PEXEvadfUlhRkRDJ09id
+    Mxh3CveZGZYuTo5=w150-h150-k-no-p']
+  }
+  ], 
+  'resp': {
+    'time': 1568770503975, 
+    'text': 'We love getting to meet new patients like yourself.  Thanks for giving our office a chance to take care of your dental needs and thanks for the nice review!'
+  }, 
+  'gmap_id': '0x87ec2394c2cd9d2d:0xd1119cfbee0da6f3'
 }
 </div>
 
 <div class="code">{
-  "reviewerID": "A2SUAM1J3GNN3B",
-  "asin": "0000013714",
-  "reviewerName": "J. McDonald",
-  "vote": 5,
-  "style": {
-    "Format:": "Hardcover"
-  },
-  "reviewText": "I bought this for my husband who plays the piano.  He is having a wonderful time playing these old hymns.  The music  is at times hard to read because we think the book was published for singing from more than playing from.  Great purchase though!",
-  "overall": 5.0,
-  "summary": "Heavenly Highway Hymns",
-  "unixReviewTime": 1252800000,
-  "reviewTime": "09 13, 2009"
+  'user_id': '101463350189962023774', 
+  'name': 'Jordan Adams', 
+  'time': 1627750414677, 
+  'rating': 5, 
+  'text': 'Cool place, great people, awesome dentist!', 
+  'pics': [
+  {
+    'url': ['https://lh5.googleusercontent.com/p/AF1QipNq2nZC5TH4_M7h5xRAd
+    61hoTgvY1o9lozABguI=w150-h150-k-no-p']
+  }
+  ], 
+  'resp': {
+    'time': 1628455067818, 
+    'text': 'Thank you for your five-star review! -Dr. Blake'
+  }, 
+  'gmap_id': '0x87ec2394c2cd9d2d:0xd1119cfbee0da6f3'
 }
 </div>
 </p>
@@ -758,48 +798,45 @@
 <p>where
 
   <ul>
-    <li><tt>reviewerID</tt> - ID of the reviewer, e.g. <a href="http://www.amazon.com/gp/cdp/member-reviews/A2SUAM1J3GNN3B">A2SUAM1J3GNN3B</a></li>
-    <li><tt>asin</tt> - ID of the product, e.g. <a href="http://www.amazon.com/dp/0000013714">0000013714</a></li>
-    <li><tt>reviewerName</tt> - name of the reviewer</li>
-    <li><tt>vote</tt> - helpful votes of the review</li>
-    <li><tt>style</tt> - a disctionary of the product metadata, e.g., "Format" is "Hardcover"</li>
-    <li><tt>reviewText</tt> - text of the review</li>
-    <li><tt>overall</tt> - rating of the product</li>
-    <li><tt>summary</tt> - summary of the review</li>
-    <li><tt>unixReviewTime</tt> - time of the review (unix time)</li>
-    <li><tt>reviewTime</tt> - time of the review (raw)</li>
-    <li><tt>image</tt> - images that users post after they have received the product</li>
+    <li><tt>user_id</tt> - ID of the reviewer</li>
+    <li><tt>name</tt> - name of the reviwer</li>
+    <li><tt>time</tt> - time of the review (unix time)</li>
+    <li><tt>rating</tt> - rating of the business</li>
+    <li><tt>text</tt> - text of the review</li>
+    <li><tt>pics</tt> - pictures of the review</li>
+    <li><tt>resp</tt> - business response to the review including unix time and text of the response</li>
+    <li><tt>gmap_id</tt> - ID of the business</li>
   </ul>
 </p>
 
 <h3>Metadata</h3>
-
-<p>
-Metadata includes descriptions, price, sales-rank, brand info, and co-purchasing links:
-</p>
-
-<p><b>metadata</b> (24gb) - metadata for 15.5 million products</p>
 <a name="sample-metadata"></a>
 <h3>Sample metadata:</h3>
 
 <p>
 <div class="code">{
-  "asin": "0000031852",
-  "title": "Girls Ballet Tutu Zebra Hot Pink",
-  "feature": ["Botiquecutie Trademark exclusive Brand",
-              "Hot Pink Layered Zebra Print Tutu",
-              "Fits girls up to a size 4T",
-              "Hand wash / Line Dry",
-              "Includes a Botiquecutie TM Exclusive hair flower bow"],
-  "description": "This tutu is great for dress up play for your little ballerina. Botiquecute Trade Mark exclusive brand. Hot Pink Zebra print tutu.", 
-  "price": 3.17,
-  "imageURL": "http://ecx.images-amazon.com/images/I/51fAmVkTbyL._SY300_.jpg",
-  "imageURLHighRes": "http://ecx.images-amazon.com/images/I/51fAmVkTbyL.jpg",
-  "also_buy": ["B00JHONN1S", "B002BZX8Z6", "B00D2K1M3O", "0000031909", "B00613WDTQ", "B00D0WDS9A", "B00D0GCI8S", "0000031895", "B003AVKOP2", "B003AVEU6G", "B003IEDM9Q", "B002R0FA24", "B00D23MC6W", "B00D2K0PA0", "B00538F5OK", "B00CEV86I6", "B002R0FABA", "B00D10CLVW", "B003AVNY6I", "B002GZGI4E", "B001T9NUFS", "B002R0F7FE", "B00E1YRI4C", "B008UBQZKU", "B00D103F8U", "B007R2RM8W"],
-  "also_viewed": ["B002BZX8Z6", "B00JHONN1S", "B008F0SU0Y", "B00D23MC6W", "B00AFDOPDA", "B00E1YRI4C", "B002GZGI4E", "B003AVKOP2", "B00D9C1WBM", "B00CEV8366", "B00CEUX0D8", "B0079ME3KU", "B00CEUWY8K", "B004FOEEHC", "0000031895", "B00BC4GY9Y", "B003XRKA7A", "B00K18LKX2", "B00EM7KAG6", "B00AMQ17JA", "B00D9C32NI", "B002C3Y6WG", "B00JLL4L5Y", "B003AVNY6I", "B008UBQZKU", "B00D0WDS9A", "B00613WDTQ", "B00538F5OK", "B005C4Y4F6", "B004LHZ1NY", "B00CPHX76U", "B00CEUWUZC", "B00IJVASUE", "B00GOR07RE", "B00J2GTM0W", "B00JHNSNSM", "B003IEDM9Q", "B00CYBU84G", "B008VV8NSQ", "B00CYBULSO", "B00I2UHSZA", "B005F50FXC", "B007LCQI3S", "B00DP68AVW", "B009RXWNSI", "B003AVEU6G", "B00HSOJB9M", "B00EHAGZNA", "B0046W9T8C", "B00E79VW6Q", "B00D10CLVW", "B00B0AVO54", "B00E95LC8Q", "B00GOR92SO", "B007ZN5Y56", "B00AL2569W", "B00B608000", "B008F0SMUC", "B00BFXLZ8M"],
-  "salesRank": {"Toys & Games": 211836},
-  "brand": "Coxlures",
-  "categories": [["Sports & Outdoors", "Other Sports", "Dance"]]
+  'name': 'Walgreens Pharmacy', 
+  'address': 'Walgreens Pharmacy, 124 E North St, Kendallville, IN 46755', 
+  'gmap_id': '0x881614ce7c13acbb:0x5c7b18bbf6ec4f7e', 
+  'description': 'Department of the Walgreens chain providing prescription medications & other health-related items.', 
+  'latitude': 41.451859999999996, 
+  'longitude': -85.2666757, 
+  'category': ['Pharmacy'], 
+  'avg_rating': 4.2, 
+  'num_of_reviews': 5, 
+  'price': '$$', 
+  'hours': [['Thursday', '8AM–1:30PM'], ['Friday', '8AM–1:30PM'], ['Saturday', '9AM–1:30PM'], ['Sunday', '10AM–1:30PM'], ['Monday', '8AM–1:30PM'], ['Tuesday', '8AM–1:30PM'], ['Wednesday', '8AM–1:30PM']], 
+  'MISC': {
+    'Service options': ['Curbside pickup', 'Drive-through', 'In-store pickup', 'In-store shopping'], 
+    'Health & safety': ['Mask required', 'Staff wear masks', 'Staff get temperature checks'], 
+    'Accessibility': ['Wheelchair accessible entrance', 'Wheelchair accessible parking lot'], 
+    'Planning': ['Quick visit'], 
+    'Payments': ['Checks', 'Debit cards']
+  }, 
+  'state': 'Closes soon ⋅ 1:30PM ⋅ Reopens 2PM', 
+  'relative_results': ['0x881614cd49e4fa33:0x2d507c24ff4f1c74', '0x8816145bf5141c89:0x535c1d605109f94b', '0x881614cda24cc591:0xca426e3a9b826432', '0x88162894d98b91ef:0xd139b34de70d3e03', '0x881615400b5e57f9:0xc56d17dbe420a67f'], 
+  'url': 'https://www.google.com/maps/place//data=!4m2!3m1!1s0x881614ce7c13acb
+  b:0x5c7b18bbf6ec4f7e?authuser=-1&hl=en&gl=us'
 }
 </div>
 </p>
@@ -807,220 +844,23 @@ Metadata includes descriptions, price, sales-rank, brand info, and co-purchasing
 <p>where
 
   <ul>
-    <li><tt>asin</tt> - ID of the product, e.g. <a href="http://www.amazon.com/dp/0000031852">0000031852</a></li>
-    <li><tt>title</tt> - name of the product</li>
-    <li><tt>feature</tt> - bullet-point format features of the product</li>
-    <li><tt>description</tt> - description of the product</li>
-    <li><tt>price</tt> - price in US dollars (at time of crawl)</li>
-    <li><tt>imageURL</tt> - url of the product image</li>
-    <li><tt>imageURL</tt> - url of the high resolution product image</li>
-    <li><tt>related</tt> - related products (also bought, also viewed, bought together, buy after viewing)</li>
-    <li><tt>salesRank</tt> - sales rank information</li>
-    <li><tt>brand</tt> - brand name</li>
-    <li><tt>categories</tt> - list of categories the product belongs to</li>
-    <li><tt>tech1</tt> - the first technical detail table of the product</li>
-    <li><tt>tech2</tt> - the second technical detail table of the product</li>
-    <li><tt>similar</tt> - similar product table</li>
+    <li><tt>name</tt> - name of the business</li>
+    <li><tt>address</tt> - address of the business</li>
+    <li><tt>gmap_id</tt> - ID of the business</li>
+    <li><tt>description</tt> - description of the business</li>
+    <li><tt>latitude</tt> - latitude of the business</li>
+    <li><tt>longitude</tt> - longitude of the business</li>
+    <li><tt>category</tt> - category of the business</li>
+    <li><tt>avg_rating</tt> - average rating of the business</li>
+    <li><tt>num_of_reviews</tt> - number of reviews</li>
+    <li><tt>price</tt> - price of the business</li>
+    <li><tt>hours</tt> - open hours</li>
+    <li><tt>MISC</tt> - MISC information</li>
+    <li><tt>state</tt> - the current status of the business (e.g., permanently closed)</li>
+    <li><tt>relative_results</tt> - relative businesses recommended by Google</li>
+    <li><tt>url</tt> - URL of the business</li>
   </ul>
 </p>
-
-<!-- <h3>Visual Features</h3>
-
-<p>We extracted visual features from each product image using a deep CNN (see citation below). Image features are stored in a binary format, which consists of 10 characters (the product ID), followed by 4096 floats (repeated for every product). See files below for further help reading the data.</p>
-
-<p><b><a href="amazon_readme.txt">visual features</a></b> (141gb) - visual features for all products</p>
-
-<p>The images themselves can be extracted from the <tt>image</tt> field in the metadata files.</p> -->
-
-<!-- <h2>Per-category files</h3>
-
-<p>
-Below are files for individual product categories, which have already had duplicate item reviews removed.
-</p>
-
-<p>
-<table class="code-table" style="font-size: 0.7em; width:90%">
-
-<!--
-<tr>
-  <td>Category</td>
-  <td>Reviews</td>
-  <td>Metadata</td>
-  <td>Visual features</td>
-</tr>
--->
-
-<!-- <tr>
-  <td>Books</td>
-  <td><a href="amazon_readme.txt">reviews</a> (22,507,155 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (2,370,585 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Electronics</td>
-  <td><a href="amazon_readme.txt">reviews</a> (7,824,482 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (498,196 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Movies and TV</td>
-  <td><a href="amazon_readme.txt">reviews</a> (4,607,047 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (208,321 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>CDs and Vinyl</td>
-  <td><a href="amazon_readme.txt">reviews</a> (3,749,004 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (492,799 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Clothing, Shoes and Jewelry</td>
-  <td><a href="amazon_readme.txt">reviews</a> (5,748,920 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (1,503,384 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Home and Kitchen</td>
-  <td><a href="amazon_readme.txt">reviews</a> (4,253,926 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (436,988 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Kindle Store</td>
-  <td><a href="amazon_readme.txt">reviews</a> (3,205,467 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (434,702 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Sports and Outdoors</td>
-  <td><a href="amazon_readme.txt">reviews</a> (3,268,695 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (532,197 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Cell Phones and Accessories</td>
-  <td><a href="amazon_readme.txt">reviews</a> (3,447,249 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (346,793 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Health and Personal Care</td>
-  <td><a href="amazon_readme.txt">reviews</a> (2,982,326 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (263,032 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Toys and Games</td>
-  <td><a href="amazon_readme.txt">reviews</a> (2,252,771 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (336,072 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Video Games</td>
-  <td><a href="amazon_readme.txt">reviews</a> (1,324,753 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (50,953 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Tools and Home Improvement</td>
-  <td><a href="amazon_readme.txt">reviews</a> (1,926,047 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (269,120 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Beauty</td>
-  <td><a href="amazon_readme.txt">reviews</a> (2,023,070 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (259,204 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Apps for Android</td>
-  <td><a href="amazon_readme.txt">reviews</a> (2,638,173 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (61,551 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Office Products</td>
-  <td><a href="amazon_readme.txt">reviews</a> (1,243,186 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (134,838 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Pet Supplies</td>
-  <td><a href="amazon_readme.txt">reviews</a> (1,235,316 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (110,707 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Automotive</td>
-  <td><a href="amazon_readme.txt">reviews</a> (1,373,768 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (331,090 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Grocery and Gourmet Food</td>
-  <td><a href="amazon_readme.txt">reviews</a> (1,297,156 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (171,760 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Patio, Lawn and Garden</td>
-  <td><a href="amazon_readme.txt">reviews</a> (993,490 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (109,094 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Baby</td>
-  <td><a href="amazon_readme.txt">reviews</a> (915,446 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (71,317 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Digital Music</td>
-  <td><a href="amazon_readme.txt">reviews</a> (836,006 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (279,899 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Musical Instruments</td>
-  <td><a href="amazon_readme.txt">reviews</a> (500,176 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (84,901 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-
-<tr>
-  <td>Amazon Instant Video</td>
-  <td><a href="amazon_readme.txt">reviews</a> (583,933 reviews)</td>
-  <td><a href="amazon_readme.txt">metadata</a> (30,648 products)</td>
-  <td><a href="amazon_readme.txt">image features</a></td>
-</tr>
-</table>
-</p> --> 
-
-
 
 <a name="code"></a>
 <h2>Code</h2>
@@ -1036,120 +876,6 @@ Below are files for individual product categories, which have already had duplic
     yield json.loads(l)
 </div>
 </p>
-
-<!-- <h3>Convert to 'strict' json</h3>
-
-<p>The above data can be read with python 'eval', but is not strict json. If you'd like to use some language other than python, you can convert the data to strict json as follows:</p>
-
-<p>
-<div class="code">import json
-import gzip
-
-def parse(path):
-  g = gzip.open(path, 'r')
-  for l in g:
-    yield json.dumps(eval(l))
-
-f = open("output.strict", 'w')
-for l in parse("reviews_Video_Games.json.gz"):
-  f.write(l + '\n')
-</div>
-</p> -->
-
-<h3>Pandas data frame</h3>
-
-<p>This code reads the data into a pandas data frame:</p>
-
-<p>
-<div class="code">import pandas as pd
-import gzip
-
-def parse(path):
-  g = gzip.open(path, 'rb')
-  for l in g:
-    yield json.loads(l)
-
-def getDF(path):
-  i = 0
-  df = {}
-  for d in parse(path):
-    df[i] = d
-    i += 1
-  return pd.DataFrame.from_dict(df, orient='index')
-
-df = getDF('reviews_Video_Games.json.gz')
-</div>
-</p>
-
-<!--
-<h3>Convert to CSV</h3>
-
-<p>This code converts (a selection of fields from) the above files to CSV format:</p>
-
-<p>
-<div class="code">import csv
-
-fields = ["asin", "description", "brand"]
-
-csvOut = gzip.open("meta_Video_Games.csv.gz", 'w')
-writer = csv.writer(csvOut)
-
-for product in parse("meta_Video_Games.json.gz"):
-  line = []
-  for f in fields:
-    if product.has_key(f): line.append(product[f])
-    else: line.append("")
-  writer.writerow(line)
-</div>
-</p>
--->
-
-<!-- <h3>Read image features</h3>
-
-<p>
-<div class="code">import array
-
-def readImageFeatures(path):
-  f = open(path, 'rb')
-  while True:
-    asin = f.read(10)
-    if asin == '': break
-    a = array.array('f')
-    a.fromfile(f, 4096)
-    yield asin, a.tolist()
-</div>
-</p> -->
-
-<h3>Example: compute average rating</h3>
-<p>
-<div class="code">ratings = []
-
-for review in parse("reviews_Video_Games.json.gz"):
-  ratings.append(review['overall'])
-
-print sum(ratings) / len(ratings)
-</div>
-</p>
-
-<h3>Example: latent-factor model in <a href="http://www.mymedialite.net/">mymedialite</a></h3>
-
-<p>Predicts ratings from a rating-only CSV file</p>
-
-<p>
-<div class="code">./rating_prediction --recommender=BiasedMatrixFactorization --training-file=ratings_Video_Games.csv --test-ratio=0.1
-</div>
-</p>
-
-</div>
-
-
-
-<div hidden>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=NhRs0vCCGWHg2FizXLAthPcEcwmf_mYfPcdnhDwzyC0&cl=ffffff&w=a"></script>
-</div>
-
-
-
 
 <script type="text/javascript">
 if (typeof jQuery != 'undefined') {
