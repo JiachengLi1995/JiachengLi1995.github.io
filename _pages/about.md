@@ -17,6 +17,10 @@ News
 
 Publications
 ======
+**Personalized Showcases: Generating Multi-Modal Explanations for Recommendations.** [[pdf](https://arxiv.org/pdf/2207.00422)]
+<br/>An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian McAuley
+<br/>International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) 2023.
+
 **PrimeNet: Pre-training for Irregular Multivariate Time Series.**
 <br/>Ranak Roy Chowdhury, Jiacheng Li, Xiyuan Zhang, Dezhi Hong, Rajesh Gupta, Jingbo Shang
 <br/>AAAI Conference on Artificial Intelligence (AAAI) 2023.
@@ -55,8 +59,6 @@ Publications
 
 Preprints
 ======
-**Personalized Showcases: Generating Multi-Modal Explanations for Recommendations.** [[pdf](https://arxiv.org/pdf/2207.00422)]
-<br/>An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian McAuley
 
 **UCEpic: Unifying Aspect Planning and Lexical Constraints for Explainable Recommendation.** [[pdf](https://arxiv.org/pdf/2209.13885.pdf)]
 <br/>Jiacheng Li, Zhankui He, Jingbo Shang, Julian McAuley
