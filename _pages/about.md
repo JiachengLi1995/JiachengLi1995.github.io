@@ -17,6 +17,14 @@ News
 
 Publications
 ======
+**Text Is All You Need: Learning Language Representations for Sequential Recommendation.**
+<br/>Jiacheng Li, Ming Wang, Jin Li, Jinmiao Fu, Xin Shen, Jingbo Shang, Julian McAuley
+<br/>ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) 2023.
+
+**UCEpic: Unifying Aspect Planning and Lexical Constraints for Generating Explanations in Recommendation.** [[pdf](https://arxiv.org/pdf/2209.13885.pdf)]
+<br/>Jiacheng Li, Zhankui He, Jingbo Shang, Julian McAuley
+<br/>ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) 2023.
+
 **Personalized Showcases: Generating Multi-Modal Explanations for Recommendations.** [[pdf](https://arxiv.org/pdf/2207.00422)]
 <br/>An Yan, Zhankui He, Jiacheng Li, Tianyang Zhang, Julian McAuley
 <br/>International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR) 2023.
@@ -60,8 +68,8 @@ Publications
 Preprints
 ======
 
-**UCEpic: Unifying Aspect Planning and Lexical Constraints for Explainable Recommendation.** [[pdf](https://arxiv.org/pdf/2209.13885.pdf)]
-<br/>Jiacheng Li, Zhankui He, Jingbo Shang, Julian McAuley
+**CLIP also Understands Text: Prompting CLIP for Phrase Understanding.** [[pdf](https://arxiv.org/pdf/2210.05836.pdf)]
+<br/>An Yan, Jiacheng Li, Wanrong Zhu, Yujie Lu, William Yang Wang, Julian McAuley
 
 
 
