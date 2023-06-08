@@ -75,6 +75,9 @@ Preprints
 
 Work Experience
 ======
+Research Scientist Intern, Meta, Sunnyvale, CA, US.
+<br/>Mentor: [Shuyang Li](https://shuyangli.me/).
+
 Applied Scientist Intern, Amazon, Seattle, WA, US.
 <br/>Mentor: [Xian Li](https://www.linkedin.com/in/xianl/) and [Chenwei Zhang](https://cwzhang.com/), Product Graph Team.
 <br/>Project: Neural-Symbolic Reasoning on Product Knowledge Graph.
