@@ -17,7 +17,12 @@ News
 
 Publications
 ======
-**Text Is All You Need: Learning Language Representations for Sequential Recommendation.**
+**Open-world Semi-supervised Generalized Relation Discovery Aligned in a Real-world Setting.**
+<br/>William Hogan, Jiacheng Li, Jingbo Shang
+<br/>Empirical Methods in Natural Language Processing (EMNLP) 2023.
+
+
+**Text Is All You Need: Learning Language Representations for Sequential Recommendation.** [[pdf](https://arxiv.org/pdf/2305.13731.pdf)] [[code](https://github.com/AaronHeee/RecFormer)]
 <br/>Jiacheng Li, Ming Wang, Jin Li, Jinmiao Fu, Xin Shen, Jingbo Shang, Julian McAuley
 <br/>ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD) 2023.
 
@@ -75,8 +80,14 @@ Preprints
 
 Work Experience
 ======
+Applied Scientist Intern, Amazon, Palo Alto, CA, US.
+<br/>Mentor: [Yifan Gao](https://yifan-gao.github.io/), A9 Team.
+<br/>Sep 2023 - Dec 2023.
+
 Research Scientist Intern, Meta, Sunnyvale, CA, US.
 <br/>Mentor: [Shuyang Li](https://shuyangli.me/).
+<br/>Project: Faithfulness and Factuality Evaluation using LLMs.
+<br/>Jun 2023 - Sep 2023.
 
 Applied Scientist Intern, Amazon, Seattle, WA, US.
 <br/>Mentor: [Xian Li](https://www.linkedin.com/in/xianl/) and [Chenwei Zhang](https://cwzhang.com/), Product Graph Team.
